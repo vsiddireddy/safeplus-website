@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroAsset from "@/assets/hero-dashboard.png.asset.json";
+import logo from "@/assets/logo.png";
 
 const features = [
   {
@@ -97,11 +98,9 @@ export default function Landing() {
       <nav className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-lg">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-              <FileText className="h-4 w-4 text-primary-foreground" />
-            </div>
+            <img src={logo} alt="SafePlus logo" className="h-8 w-8 rounded-lg object-cover" />
             <span className="font-display text-lg font-bold text-foreground">
-              QuoteKit
+              SafePlus
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -313,15 +312,13 @@ export default function Landing() {
       <footer className="border-t border-border py-8">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6">
           <div className="flex items-center gap-2">
-            <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary">
-              <FileText className="h-3 w-3 text-primary-foreground" />
-            </div>
+            <img src={logo} alt="SafePlus logo" className="h-6 w-6 rounded-md object-cover" />
             <span className="font-display text-sm font-semibold text-foreground">
-              QuoteKit
+              SafePlus
             </span>
           </div>
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} QuoteKit. All rights reserved.
+            © {new Date().getFullYear()} SafePlus. All rights reserved.
           </p>
         </div>
       </footer>
