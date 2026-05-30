@@ -186,7 +186,7 @@ export default function Landing() {
               ))}
             </div>
 
-            <p className="mx-auto mt-10 max-w-2xl text-lg text-muted-foreground sm:text-xl">
+            {/* <p className="mx-auto mt-10 max-w-2xl text-lg text-muted-foreground sm:text-xl">
               Create, send, and track stunning proposals that close. QuoteKit
               gives your team the tools to look professional and move fast.
             </p>
@@ -208,7 +208,7 @@ export default function Landing() {
               >
                 Sign in
               </Button>
-            </div>
+            </div> */}
 
           </div>
 
