@@ -129,7 +129,7 @@ export default function Landing() {
             </h1>
 
             {/* Feature points */}
-            <div className="mt-[42px] grid grid-cols-2 gap-[11.4px] sm:grid-cols-4 sm:gap-[15.2px]">
+            <div className="mt-[42px] grid grid-cols-2 gap-[10.26px] sm:grid-cols-4 sm:gap-[13.68px]">
               {[
                 {
                   label: "On-Device\nOnly",
