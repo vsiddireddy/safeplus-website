@@ -129,7 +129,7 @@ export default function Landing() {
             </h1>
 
             {/* Feature points */}
-            <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-4">
+            <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
               {[
                 {
                   label: "On-Device Only",
@@ -172,7 +172,7 @@ export default function Landing() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
-                    className="h-10 w-10 text-foreground"
+                    className="h-11 w-11 text-foreground"
                     stroke="currentColor"
                     strokeWidth={2}
                     strokeLinecap="round"
