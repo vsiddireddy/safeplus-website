@@ -123,11 +123,9 @@ export default function Landing() {
               <Sparkles className="h-3.5 w-3.5 text-primary" />
               Now with AI-powered content writing
             </div>
-            <h1 className="font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              Win more deals with{" "}
-              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                beautiful proposals
-              </span>
+            <h1 className="font-display text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+              <span style={{ color: "#f48e39" }}>Win more deals with</span>{" "}
+              <span style={{ color: "#e15821" }}>beautiful proposals</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
               Create, send, and track stunning proposals that close. QuoteKit
