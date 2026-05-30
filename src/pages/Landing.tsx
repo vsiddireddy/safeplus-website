@@ -15,6 +15,8 @@ import {
 import { Button } from "@/components/ui/button";
 import heroAsset from "@/assets/hero-dashboard.png.asset.json";
 import logo from "@/assets/logo.png";
+import appStoreBadge from "@/assets/app-store-badge.svg";
+import googlePlayBadge from "@/assets/google-play-badge.svg";
 
 const features = [
   {
@@ -192,22 +194,12 @@ export default function Landing() {
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Button
-                size="lg"
-                className="h-12 px-8 text-base w-full sm:w-auto"
-                onClick={() => navigate("/signup")}
-              >
-                Start for free
-                <ArrowRight className="ml-1 h-4 w-4" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="h-12 px-8 text-base w-full sm:w-auto"
-                onClick={() => navigate("/login")}
-              >
-                Sign in
-              </Button>
+              <a href="#" aria-label="Download on the App Store" className="inline-block transition-transform hover:scale-105">
+                <img src={appStoreBadge} alt="Download on the App Store" className="h-14 w-auto" />
+              </a>
+              <a href="#" aria-label="Get it on Google Play" className="inline-block transition-transform hover:scale-105">
+                <img src={googlePlayBadge} alt="Get it on Google Play" className="h-14 w-auto" />
+              </a>
             </div>
 
 
