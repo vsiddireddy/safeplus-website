@@ -119,10 +119,10 @@ export default function Landing() {
         <div className="absolute inset-0 bg-gradient-to-b from-accent/50 to-background" />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6 pb-20 pt-20 sm:pt-28">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-sm text-muted-foreground">
+            {/* <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-sm text-muted-foreground">
               <Sparkles className="h-3.5 w-3.5 text-primary" />
               Now with AI-powered content writing
-            </div>
+            </div> */}
             <h1 className="font-display text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
               <span className="block" style={{ color: "#f48e39" }}>Your digital vault for</span>
               <span className="block whitespace-nowrap" style={{ color: "#e15821" }}>cards, docs, and passwords</span>
