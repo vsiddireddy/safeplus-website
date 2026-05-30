@@ -181,7 +181,7 @@ export default function Landing() {
                   >
                     {item.svg}
                   </svg>
-                  <p className="mt-3 text-base font-semibold text-foreground">{item.label}</p>
+                  <p className="mt-3 text-base font-semibold text-foreground whitespace-pre-line">{item.label}</p>
                 </div>
               ))}
             </div>
