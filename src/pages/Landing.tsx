@@ -129,7 +129,7 @@ export default function Landing() {
             </h1>
 
             {/* Feature points */}
-            <div className="mt-[42px] grid grid-cols-2 gap-[10.26px] sm:grid-cols-4 sm:gap-[13.68px]">
+            {/* <div className="mt-[42px] grid grid-cols-2 gap-[10.26px] sm:grid-cols-4 sm:gap-[13.68px]">
               {[
                 {
                   label: "On-Device\nOnly",
@@ -184,9 +184,9 @@ export default function Landing() {
                   <p className="mt-3 text-base font-semibold text-foreground whitespace-pre-line">{item.label}</p>
                 </div>
               ))}
-            </div>
+            </div> */}
 
-            {/* <p className="mx-auto mt-10 max-w-2xl text-lg text-muted-foreground sm:text-xl">
+            <p className="mx-auto mt-10 max-w-2xl text-lg text-muted-foreground sm:text-xl">
               Create, send, and track stunning proposals that close. QuoteKit
               gives your team the tools to look professional and move fast.
             </p>
@@ -208,7 +208,8 @@ export default function Landing() {
               >
                 Sign in
               </Button>
-            </div> */}
+            </div>
+
 
           </div>
 
