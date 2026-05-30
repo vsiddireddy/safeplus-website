@@ -203,8 +203,8 @@ export default function Landing() {
           {/* Hero phone showcase */}
           <div className="relative mx-auto mt-20 flex max-w-5xl items-end justify-center animate-fade-in">
             <img
-              src={appPasswords}
-              alt="SafePlus passwords screen"
+              src={appCard}
+              alt="SafePlus card detail"
               className="relative z-10 w-[34%] max-w-[280px] -mr-[8%] mb-8 -rotate-[10deg] drop-shadow-2xl"
               loading="lazy"
             />
@@ -215,8 +215,8 @@ export default function Landing() {
               loading="eager"
             />
             <img
-              src={appCard}
-              alt="SafePlus card detail"
+              src={appPasswords}
+              alt="SafePlus passwords screen"
               className="relative z-10 w-[34%] max-w-[280px] -ml-[8%] mb-8 rotate-[10deg] drop-shadow-2xl"
               loading="lazy"
             />
