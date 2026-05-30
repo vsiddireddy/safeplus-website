@@ -22,38 +22,32 @@ const features = [
   {
     icon: Sparkles,
     title: "AI-Powered Writing",
-    description:
-      "Generate polished, persuasive proposal content in seconds with built-in AI assistance.",
+    description: "Generate polished, persuasive proposal content in seconds with built-in AI assistance.",
   },
   {
     icon: Share2,
     title: "One-Click Sharing",
-    description:
-      "Send branded proposals via a secure link — no attachments, no friction.",
+    description: "Send branded proposals via a secure link — no attachments, no friction.",
   },
   {
     icon: BarChart3,
     title: "Engagement Tracking",
-    description:
-      "Know the moment a client opens, reads, or accepts your proposal in real time.",
+    description: "Know the moment a client opens, reads, or accepts your proposal in real time.",
   },
   {
     icon: Palette,
     title: "Branded Templates",
-    description:
-      "Start from beautiful, customizable templates that match your company's identity.",
+    description: "Start from beautiful, customizable templates that match your company's identity.",
   },
   {
     icon: Users,
     title: "Team Collaboration",
-    description:
-      "Work together on proposals with role-based access and department organization.",
+    description: "Work together on proposals with role-based access and department organization.",
   },
   {
     icon: TrendingUp,
     title: "Analytics & Insights",
-    description:
-      "Track win rates, response times, and proposal performance across your team.",
+    description: "Track win rates, response times, and proposal performance across your team.",
   },
 ];
 
@@ -61,30 +55,21 @@ const steps = [
   {
     num: "01",
     title: "Create",
-    description:
-      "Pick a template, customize your content with AI help, and add your pricing.",
+    description: "Pick a template, customize your content with AI help, and add your pricing.",
   },
   {
     num: "02",
     title: "Send",
-    description:
-      "Share a branded link with your client — they view it instantly in their browser.",
+    description: "Share a branded link with your client — they view it instantly in their browser.",
   },
   {
     num: "03",
     title: "Win",
-    description:
-      "Track engagement in real time, get notified on acceptance, and close the deal.",
+    description: "Track engagement in real time, get notified on acceptance, and close the deal.",
   },
 ];
 
-const logos = [
-  "Acme Corp",
-  "TechStart",
-  "Global Media",
-  "BrightPath",
-  "Zenith",
-];
+const logos = ["Acme Corp", "TechStart", "Global Media", "BrightPath", "Zenith"];
 
 export default function Landing() {
   const { user, loading } = useAuth();
@@ -101,9 +86,7 @@ export default function Landing() {
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           <div className="flex items-center gap-2">
             <img src={logo} alt="SafePlus logo" className="h-8 w-8 rounded-lg object-cover" />
-            <span className="font-display text-lg font-bold text-foreground">
-              SafePlus
-            </span>
+            <span className="font-display text-lg font-bold text-foreground">SafePlus</span>
           </div>
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="sm" onClick={() => navigate("/login")}>
@@ -126,8 +109,12 @@ export default function Landing() {
               Now with AI-powered content writing
             </div> */}
             <h1 className="font-display text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-              <span className="block" style={{ color: "#f48e39" }}>Your digital vault for</span>
-              <span className="block whitespace-nowrap" style={{ color: "#e15821" }}>cards, docs, and passwords</span>
+              <span className="block" style={{ color: "#f48e39" }}>
+                Your personal vault{" "}
+              </span>
+              <span className="block whitespace-nowrap" style={{ color: "#e15821" }}>
+                for everything important
+              </span>
             </h1>
 
             {/* Feature points */}
@@ -189,20 +176,26 @@ export default function Landing() {
             </div> */}
 
             <p className="mx-auto mt-10 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-              Create, send, and track stunning proposals that close. QuoteKit
-              gives your team the tools to look professional and move fast.
+              Create, send, and track stunning proposals that close. QuoteKit gives your team the tools to look
+              professional and move fast.
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <a href="#" aria-label="Download on the App Store" className="inline-block transition-transform hover:scale-105">
+              <a
+                href="#"
+                aria-label="Download on the App Store"
+                className="inline-block transition-transform hover:scale-105"
+              >
                 <img src={appStoreBadge} alt="Download on the App Store" className="h-14 w-auto" />
               </a>
-              <a href="#" aria-label="Get it on Google Play" className="inline-block transition-transform hover:scale-105">
+              <a
+                href="#"
+                aria-label="Get it on Google Play"
+                className="inline-block transition-transform hover:scale-105"
+              >
                 <img src={googlePlayBadge} alt="Get it on Google Play" className="h-14 w-auto" />
               </a>
             </div>
-
-
           </div>
 
           {/* Hero image */}
@@ -224,15 +217,10 @@ export default function Landing() {
       {/* Social proof */}
       <section className="border-y border-border bg-muted/50 py-10">
         <div className="mx-auto max-w-6xl px-6">
-          <p className="mb-6 text-center text-sm font-medium text-muted-foreground">
-            Trusted by 500+ teams worldwide
-          </p>
+          <p className="mb-6 text-center text-sm font-medium text-muted-foreground">Trusted by 500+ teams worldwide</p>
           <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4">
             {logos.map((name) => (
-              <span
-                key={name}
-                className="font-display text-lg font-semibold text-muted-foreground/40"
-              >
+              <span key={name} className="font-display text-lg font-semibold text-muted-foreground/40">
                 {name}
               </span>
             ))}
@@ -244,12 +232,9 @@ export default function Landing() {
       <section className="py-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
-              Everything you need to win
-            </h2>
+            <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">Everything you need to win</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              From drafting to tracking, QuoteKit handles every step of the
-              proposal workflow.
+              From drafting to tracking, QuoteKit handles every step of the proposal workflow.
             </p>
           </div>
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -262,12 +247,8 @@ export default function Landing() {
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-accent text-accent-foreground">
                   <f.icon className="h-5 w-5" />
                 </div>
-                <h3 className="font-display text-lg font-semibold text-foreground">
-                  {f.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {f.description}
-                </p>
+                <h3 className="font-display text-lg font-semibold text-foreground">{f.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{f.description}</p>
               </div>
             ))}
           </div>
@@ -278,12 +259,8 @@ export default function Landing() {
       <section className="bg-muted/50 py-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
-              Three steps to close
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              QuoteKit makes your proposal process effortless.
-            </p>
+            <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">Three steps to close</h2>
+            <p className="mt-4 text-lg text-muted-foreground">QuoteKit makes your proposal process effortless.</p>
           </div>
           <div className="mt-16 grid gap-8 sm:grid-cols-3">
             {steps.map((s) => (
@@ -291,12 +268,8 @@ export default function Landing() {
                 <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground font-display text-xl font-bold">
                   {s.num}
                 </div>
-                <h3 className="font-display text-xl font-semibold text-foreground">
-                  {s.title}
-                </h3>
-                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                  {s.description}
-                </p>
+                <h3 className="font-display text-xl font-semibold text-foreground">{s.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.description}</p>
               </div>
             ))}
           </div>
@@ -340,11 +313,7 @@ export default function Landing() {
             Join hundreds of teams already using QuoteKit to close more deals.
           </p>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Button
-              size="lg"
-              className="h-12 px-8 text-base w-full sm:w-auto"
-              onClick={() => navigate("/signup")}
-            >
+            <Button size="lg" className="h-12 px-8 text-base w-full sm:w-auto" onClick={() => navigate("/signup")}>
               Get started — it's free
               <ArrowRight className="ml-1 h-4 w-4" />
             </Button>
@@ -365,13 +334,9 @@ export default function Landing() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6">
           <div className="flex items-center gap-2">
             <img src={logo} alt="SafePlus logo" className="h-6 w-6 rounded-md object-cover" />
-            <span className="font-display text-sm font-semibold text-foreground">
-              SafePlus
-            </span>
+            <span className="font-display text-sm font-semibold text-foreground">SafePlus</span>
           </div>
-          <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} SafePlus. All rights reserved.
-          </p>
+          <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} SafePlus. All rights reserved.</p>
         </div>
       </footer>
     </div>
