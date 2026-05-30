@@ -13,10 +13,12 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroAsset from "@/assets/hero-dashboard.png.asset.json";
 import logo from "@/assets/logo.png";
 import appStoreBadge from "@/assets/app-store-badge.svg";
 import googlePlayBadge from "@/assets/google-play-badge.svg";
+import appHome from "@/assets/app-home.png";
+import appPasswords from "@/assets/app-passwords.png";
+import appCard from "@/assets/app-card.png";
 
 const features = [
   {
@@ -198,17 +200,26 @@ export default function Landing() {
             </div>
           </div>
 
-          {/* Hero image */}
-          <div className="relative mx-auto mt-16 max-w-5xl animate-fade-in">
-            <div className="rounded-xl border border-border bg-card p-2 shadow-2xl shadow-primary/10">
-              <img
-                src={heroAsset.url}
-                alt="QuoteKit proposal dashboard showing a professional proposal with pricing, status tracking, and client notifications"
-                className="w-full rounded-lg"
-                loading="eager"
-              />
-            </div>
-            {/* Glow effect */}
+          {/* Hero phone showcase */}
+          <div className="relative mx-auto mt-20 flex max-w-5xl items-end justify-center animate-fade-in">
+            <img
+              src={appPasswords}
+              alt="SafePlus passwords screen"
+              className="relative z-10 w-[34%] max-w-[280px] -mr-[8%] mb-8 -rotate-[10deg] drop-shadow-2xl"
+              loading="lazy"
+            />
+            <img
+              src={appHome}
+              alt="SafePlus home dashboard"
+              className="relative z-20 w-[38%] max-w-[320px] drop-shadow-2xl"
+              loading="eager"
+            />
+            <img
+              src={appCard}
+              alt="SafePlus card detail"
+              className="relative z-10 w-[34%] max-w-[280px] -ml-[8%] mb-8 rotate-[10deg] drop-shadow-2xl"
+              loading="lazy"
+            />
             <div className="absolute -inset-4 -z-10 rounded-2xl bg-gradient-to-r from-primary/20 via-transparent to-primary/10 blur-3xl" />
           </div>
         </div>
