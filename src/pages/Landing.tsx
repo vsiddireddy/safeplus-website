@@ -186,14 +186,14 @@ export default function Landing() {
                 aria-label="Download on the App Store"
                 className="inline-block transition-transform hover:scale-105"
               >
-                <img src={appStoreBadge} alt="Download on the App Store" className="h-14 w-auto" />
+                <img src={appStoreBadge} alt="Download on the App Store" className="h-[53px] w-auto" />
               </a>
               <a
                 href="#"
                 aria-label="Get it on Google Play"
                 className="inline-block transition-transform hover:scale-105"
               >
-                <img src={googlePlayBadge} alt="Get it on Google Play" className="h-14 w-auto" />
+                <img src={googlePlayBadge} alt="Get it on Google Play" className="h-[53px] w-auto" />
               </a>
             </div>
           </div>
