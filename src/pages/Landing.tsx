@@ -127,31 +127,9 @@ export default function Landing() {
               <span className="block" style={{ color: "#f48e39" }}>Your digital vault for</span>
               <span className="block whitespace-nowrap" style={{ color: "#e15821" }}>cards, docs, and passwords</span>
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-              Create, send, and track stunning proposals that close. QuoteKit
-              gives your team the tools to look professional and move fast.
-            </p>
-            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Button
-                size="lg"
-                className="h-12 px-8 text-base w-full sm:w-auto"
-                onClick={() => navigate("/signup")}
-              >
-                Start for free
-                <ArrowRight className="ml-1 h-4 w-4" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="h-12 px-8 text-base w-full sm:w-auto"
-                onClick={() => navigate("/login")}
-              >
-                Sign in
-              </Button>
-            </div>
 
             {/* Feature points */}
-            <div className="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4">
+            <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-4">
               {[
                 {
                   label: "On-Device Only",
@@ -206,6 +184,31 @@ export default function Landing() {
                 </div>
               ))}
             </div>
+
+            <p className="mx-auto mt-10 max-w-2xl text-lg text-muted-foreground sm:text-xl">
+              Create, send, and track stunning proposals that close. QuoteKit
+              gives your team the tools to look professional and move fast.
+            </p>
+
+            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <Button
+                size="lg"
+                className="h-12 px-8 text-base w-full sm:w-auto"
+                onClick={() => navigate("/signup")}
+              >
+                Start for free
+                <ArrowRight className="ml-1 h-4 w-4" />
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="h-12 px-8 text-base w-full sm:w-auto"
+                onClick={() => navigate("/login")}
+              >
+                Sign in
+              </Button>
+            </div>
+
           </div>
 
           {/* Hero image */}
