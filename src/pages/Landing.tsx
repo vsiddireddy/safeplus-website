@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroAsset from "@/assets/hero-dashboard.png.asset.json";
+import logo from "@/assets/logo.png";
 
 const features = [
   {
