@@ -132,7 +132,7 @@ export default function Landing() {
             <div className="mt-[42px] grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
               {[
                 {
-                  label: "On-Device Only",
+                  label: "On-Device\nOnly",
                   svg: (
                     <path d="M10.75 4.25H13.25M7.75 22.25H16.25C17.3546 22.25 18.25 21.3546 18.25 20.25V3.75C18.25 2.64543 17.3546 1.75 16.25 1.75H7.75C6.64543 1.75 5.75 2.64543 5.75 3.75V20.25C5.75 21.3546 6.64543 22.25 7.75 22.25Z" />
 
