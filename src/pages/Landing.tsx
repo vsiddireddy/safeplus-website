@@ -176,8 +176,8 @@ export default function Landing() {
             </div> */}
 
             <p className="mx-auto mt-10 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-              Create, send, and track stunning proposals that close. QuoteKit gives your team the tools to look
-              professional and move fast.
+              Store IDs, cards, documents, passwords, and more all securely on your device. Private by design. Your data
+              never leaves your phone.
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
