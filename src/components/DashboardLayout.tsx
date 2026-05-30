@@ -6,8 +6,9 @@ import {
   DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
-import { FileText, LayoutDashboard, Users, FolderOpen, PlusCircle, Settings, LogOut, User, ClipboardList, Menu } from "lucide-react";
+import { LayoutDashboard, Users, FolderOpen, PlusCircle, Settings, LogOut, User, ClipboardList, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 
 const navItems = [
   { to: "/dashboard", icon: LayoutDashboard, label: "Dashboard" },
@@ -37,11 +38,9 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
               <Menu className="h-5 w-5" />
             </Button>
             <Link to="/dashboard" className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-                <FileText className="h-4 w-4 text-primary-foreground" />
-              </div>
+              <img src={logo} alt="SafePlus logo" className="h-8 w-8 rounded-lg object-cover" />
               <span className="text-lg font-bold font-display text-foreground hidden sm:block">
-                {organization?.name ?? "QuoteKit"}
+                {organization?.name ?? "SafePlus"}
               </span>
             </Link>
           </div>
@@ -96,10 +95,8 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
         <SheetContent side="left" className="w-72 p-0">
           <SheetHeader className="border-b border-border p-4">
             <SheetTitle className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-                <FileText className="h-4 w-4 text-primary-foreground" />
-              </div>
-              {organization?.name ?? "QuoteKit"}
+              <img src={logo} alt="SafePlus logo" className="h-8 w-8 rounded-lg object-cover" />
+              {organization?.name ?? "SafePlus"}
             </SheetTitle>
           </SheetHeader>
           <nav className="flex flex-col gap-1 p-4">
