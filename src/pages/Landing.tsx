@@ -127,10 +127,69 @@ export default function Landing() {
               <span className="block" style={{ color: "#f48e39" }}>Your digital vault for</span>
               <span className="block whitespace-nowrap" style={{ color: "#e15821" }}>cards, docs, and passwords</span>
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
+
+            {/* Feature points */}
+            <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-4">
+              {[
+                {
+                  label: "On-Device Only",
+                  svg: (
+                    <path d="M6.40519 19.0481C6.58912 18.6051 6.75832 18.1545 6.91219 17.6969M14.3433 20.6926C14.6095 19.9418 14.8456 19.1768 15.0502 18.399C15.2359 17.6934 15.3956 16.9772 15.5283 16.2516M19.4477 17.0583C19.8121 15.0944 20.0026 13.0694 20.0026 11C20.0026 6.58172 16.4209 3 12.0026 3C10.7472 3 9.55932 3.28918 8.50195 3.80456M3.52344 15.0245C3.83663 13.7343 4.00262 12.3865 4.00262 11C4.00262 9.25969 4.55832 7.64917 5.50195 6.33621M12.003 11C12.003 13.7604 11.5557 16.4163 10.7295 18.8992C10.5169 19.5381 10.2792 20.1655 10.0176 20.7803M7.71227 14.5C7.90323 13.3618 8.00262 12.1925 8.00262 11C8.00262 8.79086 9.79348 7 12.0026 7C14.2118 7 16.0026 8.79086 16.0026 11C16.0026 11.6166 15.9834 12.2287 15.9455 12.8357" />
+                  ),
+                },
+                {
+                  label: "Smart Card/Doc Scanner",
+                  svg: (
+                    <>
+                      <path d="M8 4H7C5.34315 4 4 5.34315 4 7V8" />
+                      <path d="M16 4H17C18.6569 4 20 5.34315 20 7V8" />
+                      <path d="M20 16V17C20 18.6569 18.6569 20 17 20H16" />
+                      <path d="M8 20H7C5.34315 20 4 18.6569 4 17V16" />
+                      <path d="M9 10H15" />
+                      <path d="M9 14H13" />
+                    </>
+                  ),
+                },
+                {
+                  label: "Expiration Reminders",
+                  svg: (
+                    <>
+                      <path d="M2.75879 10.1637L3.62703 15.0877C3.91474 16.7194 5.47072 17.8089 7.1024 17.5212L10.0972 16.9931M2.75879 10.1637L2.58514 9.17888C2.29743 7.5472 3.38694 5.99122 5.01862 5.70351L11.9123 4.48797C13.544 4.20026 15.0999 5.28977 15.3876 6.92145C15.4835 7.46535 15.1204 7.984 14.5765 8.07991L2.75879 10.1637Z" />
+                      <path d="M16 20C19.3137 20 22 17.3137 22 14C22 10.6863 19.3137 8 16 8C12.6863 8 10 10.6863 10 14C10 17.3137 12.6863 20 16 20Z" />
+                      <path d="M16 12V14L17.6667 15.6667" />
+                    </>
+                  ),
+                },
+                {
+                  label: "Face & Fingerprint Lock",
+                  svg: (
+                    <path d="M6.40519 19.0481C6.58912 18.6051 6.75832 18.1545 6.91219 17.6969M14.3433 20.6926C14.6095 19.9418 14.8456 19.1768 15.0502 18.399C15.2359 17.6934 15.3956 16.9772 15.5283 16.2516M19.4477 17.0583C19.8121 15.0944 20.0026 13.0694 20.0026 11C20.0026 6.58172 16.4209 3 12.0026 3C10.7472 3 9.55932 3.28918 8.50195 3.80456M3.52344 15.0245C3.83663 13.7343 4.00262 12.3865 4.00262 11C4.00262 9.25969 4.55832 7.64917 5.50195 6.33621M12.003 11C12.003 13.7604 11.5557 16.4163 10.7295 18.8992C10.5169 19.5381 10.2792 20.1655 10.0176 20.7803M7.71227 14.5C7.90323 13.3618 8.00262 12.1925 8.00262 11C8.00262 8.79086 9.79348 7 12.0026 7C14.2118 7 16.0026 8.79086 16.0026 11C16.0026 11.6166 15.9834 12.2287 15.9455 12.8357" />
+                  ),
+                },
+              ].map((item) => (
+                <div key={item.label} className="flex flex-col items-center text-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    className="h-10 w-10 text-foreground"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    {item.svg}
+                  </svg>
+                  <p className="mt-3 text-sm font-semibold text-foreground">{item.label}</p>
+                </div>
+              ))}
+            </div>
+
+            <p className="mx-auto mt-10 max-w-2xl text-lg text-muted-foreground sm:text-xl">
               Create, send, and track stunning proposals that close. QuoteKit
               gives your team the tools to look professional and move fast.
             </p>
+
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button
                 size="lg"
