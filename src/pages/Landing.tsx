@@ -71,7 +71,21 @@ const steps = [
   },
 ];
 
-const logos = ["Acme Corp", "TechStart", "Global Media", "BrightPath", "Zenith"];
+const storedItems = [
+  "Driver's Licenses",
+  "Passports",
+  "Birth & Marriage Certificates",
+  "Credit & Debit Cards",
+  "Gift Cards",
+  "Loyalty & Membership",
+  "Receipts",
+  "Vehicle Registration & Title",
+  "Health Documents",
+  "Boarding Passes",
+  "Known Travel Number",
+  "Lease & Rental Documents",
+  "Mortgage Documents",
+];
 
 export default function Landing() {
   const { user, loading } = useAuth();
