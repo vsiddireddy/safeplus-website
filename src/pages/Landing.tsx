@@ -125,14 +125,14 @@ export default function Landing() {
             <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
             <a href="#blog" className="hover:text-primary transition-colors">Blog</a>
           </div>
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             <Button variant="ghost" size="sm" onClick={() => navigate("/login")}>
               Sign in
             </Button>
             <Button size="sm" onClick={() => navigate("/signup")}>
               Get started
             </Button>
-          </div>
+          </div> */}
         </div>
       </nav>
 
