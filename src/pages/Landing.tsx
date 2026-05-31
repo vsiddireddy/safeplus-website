@@ -98,6 +98,7 @@ const storedItems = [
   { name: "Known Travel Number", icon: Globe2 },
   { name: "Lease & Rental Documents", icon: Home },
   { name: "Mortgage Documents", icon: Landmark },
+  { name: "Passwords", icon: KeyRound },
 ];
 
 export default function Landing() {
