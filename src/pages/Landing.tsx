@@ -242,10 +242,10 @@ export default function Landing() {
       {/* Social proof */}
       <section className="border-y border-border bg-muted/50 py-10">
         <div className="mx-auto max-w-6xl px-6">
-          <p className="mb-6 text-center text-sm font-medium text-muted-foreground">Trusted by 500+ teams worldwide</p>
-          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4">
-            {logos.map((name) => (
-              <span key={name} className="font-display text-lg font-semibold text-muted-foreground/40">
+          <p className="mb-6 text-center text-sm font-medium text-muted-foreground">Store and protect all your essentials</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+            {storedItems.map((name) => (
+              <span key={name} className="rounded-full border border-border bg-background px-4 py-1.5 font-display text-sm font-medium text-muted-foreground">
                 {name}
               </span>
             ))}
