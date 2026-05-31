@@ -254,7 +254,7 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Social proof */}
+      {/* Social proof - commented out
       <section className="relative overflow-hidden border-y border-border py-14" style={{ background: "linear-gradient(180deg, rgba(225,88,33,0.08) 0%, rgba(225,88,33,0.18) 100%)" }}>
         <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 60%)" }} />
         <div className="relative">
@@ -277,6 +277,7 @@ export default function Landing() {
         </div>
         </div>
       </section>
+      */}
 
       {/* Features */}
       <section className="py-24">
