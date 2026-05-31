@@ -11,6 +11,19 @@ import {
   TrendingUp,
   ArrowRight,
   CheckCircle2,
+  IdCard,
+  BookUser,
+  ScrollText,
+  CreditCard,
+  Gift,
+  Award,
+  Receipt,
+  Car,
+  HeartPulse,
+  Plane,
+  Globe2,
+  Home,
+  Landmark,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
