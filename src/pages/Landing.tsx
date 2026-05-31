@@ -253,7 +253,9 @@ export default function Landing() {
       </section>
 
       {/* Social proof */}
-      <section className="border-y border-border bg-muted/50 py-14">
+      <section className="relative overflow-hidden border-y border-border py-14" style={{ background: "linear-gradient(180deg, #eaf4fb 0%, #d6eaf6 100%)" }}>
+        <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 60%)" }} />
+        <div className="relative">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="mb-10 text-center font-display text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "#f48e39" }}>
             Store and protect all your essentials
@@ -270,6 +272,7 @@ export default function Landing() {
               </span>
             ))}
           </div>
+        </div>
         </div>
       </section>
 
