@@ -280,7 +280,7 @@ export default function Landing() {
       */}
 
       {/* Features */}
-      <section className="py-24">
+      <section className="bg-white py-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">Everything you need to win</h2>
