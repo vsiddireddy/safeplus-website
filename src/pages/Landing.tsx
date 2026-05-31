@@ -24,6 +24,7 @@ import {
   Globe2,
   Home,
   Landmark,
+  KeyRound,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
@@ -98,6 +99,7 @@ const storedItems = [
   { name: "Known Travel Number", icon: Globe2 },
   { name: "Lease & Rental Documents", icon: Home },
   { name: "Mortgage Documents", icon: Landmark },
+  { name: "Passwords", icon: KeyRound },
 ];
 
 export default function Landing() {
