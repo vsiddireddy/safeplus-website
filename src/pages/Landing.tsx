@@ -253,7 +253,7 @@ export default function Landing() {
       </section>
 
       {/* Social proof */}
-      <section className="relative overflow-hidden border-y border-border py-14" style={{ background: "linear-gradient(180deg, #eaf4fb 0%, #d6eaf6 100%)" }}>
+      <section className="relative overflow-hidden border-y border-border py-14" style={{ background: "linear-gradient(180deg, rgba(225,88,33,0.08) 0%, rgba(225,88,33,0.18) 100%)" }}>
         <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 60%)" }} />
         <div className="relative">
         <div className="mx-auto max-w-6xl px-6">
