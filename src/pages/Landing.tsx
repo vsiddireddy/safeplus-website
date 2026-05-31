@@ -253,12 +253,19 @@ export default function Landing() {
       </section>
 
       {/* Social proof */}
-      <section className="border-y border-border bg-muted/50 py-10">
+      <section className="border-y border-border bg-muted/50 py-14">
         <div className="mx-auto max-w-6xl px-6">
-          <p className="mb-6 text-center font-display text-2xl font-semibold sm:text-3xl" style={{ color: "#f48e39" }}>Store and protect all your essentials</p>
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
-            {storedItems.map((name) => (
-              <span key={name} className="rounded-full border border-border bg-background px-4 py-1.5 font-display text-sm font-medium" style={{ color: "#e15821" }}>
+          <h2 className="mb-10 text-center font-display text-3xl font-bold tracking-tight sm:text-4xl" style={{ color: "#f48e39" }}>
+            Store and protect all your essentials
+          </h2>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {storedItems.map(({ name, icon: Icon }) => (
+              <span
+                key={name}
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-5 py-2.5 font-display text-base font-semibold shadow-sm"
+                style={{ color: "#e15821" }}
+              >
+                <Icon className="h-[18px] w-[18px]" strokeWidth={2} />
                 {name}
               </span>
             ))}
