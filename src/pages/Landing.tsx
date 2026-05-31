@@ -114,12 +114,12 @@ export default function Landing() {
     <div className="flex min-h-screen flex-col bg-background">
       {/* Nav */}
       <nav className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-lg">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+        <div className="relative mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           <div className="flex items-center gap-2">
             <img src={logo} alt="SafePlus logo" className="h-8 w-8 rounded-lg object-cover" />
             <span className="font-display text-lg font-bold text-foreground">SafePlus</span>
           </div>
-          <div className="hidden md:flex items-center gap-6 text-sm font-medium text-foreground">
+          <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-6 text-sm font-medium text-foreground">
             <a href="#features" className="hover:text-primary transition-colors">Features</a>
             <a href="#security" className="hover:text-primary transition-colors">Security</a>
             <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
