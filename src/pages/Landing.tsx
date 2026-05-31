@@ -205,19 +205,19 @@ export default function Landing() {
             <img
               src={appCard}
               alt="SafePlus card detail"
-              className="relative z-10 w-[34%] max-w-[280px] -mr-[8%] mb-8 -rotate-[10deg] drop-shadow-2xl"
+              className="relative z-10 w-[44%] max-w-[380px] -mr-[10%] mb-10 -rotate-[10deg] drop-shadow-2xl"
               loading="lazy"
             />
             <img
               src={appHome}
               alt="SafePlus home dashboard"
-              className="relative z-20 w-[38%] max-w-[320px] drop-shadow-2xl"
+              className="relative z-20 w-[50%] max-w-[440px] drop-shadow-2xl"
               loading="eager"
             />
             <img
               src={appPasswords}
               alt="SafePlus passwords screen"
-              className="relative z-10 w-[34%] max-w-[280px] -ml-[8%] mb-8 rotate-[10deg] drop-shadow-2xl"
+              className="relative z-10 w-[44%] max-w-[380px] -ml-[10%] mb-10 rotate-[10deg] drop-shadow-2xl"
               loading="lazy"
             />
             <div className="absolute -inset-4 -z-10 rounded-2xl bg-gradient-to-r from-primary/20 via-transparent to-primary/10 blur-3xl" />
