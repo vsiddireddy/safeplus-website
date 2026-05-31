@@ -85,19 +85,19 @@ const steps = [
 ];
 
 const storedItems = [
-  "Driver's Licenses",
-  "Passports",
-  "Birth & Marriage Certificates",
-  "Credit & Debit Cards",
-  "Gift Cards",
-  "Loyalty & Membership",
-  "Receipts",
-  "Vehicle Registration & Title",
-  "Health Documents",
-  "Boarding Passes",
-  "Known Travel Number",
-  "Lease & Rental Documents",
-  "Mortgage Documents",
+  { name: "Driver's Licenses", icon: IdCard },
+  { name: "Passports", icon: BookUser },
+  { name: "Birth & Marriage Certificates", icon: ScrollText },
+  { name: "Credit & Debit Cards", icon: CreditCard },
+  { name: "Gift Cards", icon: Gift },
+  { name: "Loyalty & Membership", icon: Award },
+  { name: "Receipts", icon: Receipt },
+  { name: "Vehicle Registration & Title", icon: Car },
+  { name: "Health Documents", icon: HeartPulse },
+  { name: "Boarding Passes", icon: Plane },
+  { name: "Known Travel Number", icon: Globe2 },
+  { name: "Lease & Rental Documents", icon: Home },
+  { name: "Mortgage Documents", icon: Landmark },
 ];
 
 export default function Landing() {
