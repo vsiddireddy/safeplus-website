@@ -119,6 +119,12 @@ export default function Landing() {
             <img src={logo} alt="SafePlus logo" className="h-8 w-8 rounded-lg object-cover" />
             <span className="font-display text-lg font-bold text-foreground">SafePlus</span>
           </div>
+          <div className="hidden md:flex items-center gap-6 text-sm font-medium text-foreground">
+            <a href="#features" className="hover:text-primary transition-colors">Features</a>
+            <a href="#security" className="hover:text-primary transition-colors">Security</a>
+            <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
+            <a href="#blog" className="hover:text-primary transition-colors">Blog</a>
+          </div>
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="sm" onClick={() => navigate("/login")}>
               Sign in
