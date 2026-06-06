@@ -289,31 +289,34 @@ export default function Landing() {
       */}
 
       {/* Features */}
-      <section className="bg-white py-24">
+      <section id="features" className="bg-white py-24">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">Everything you need to win</h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              From drafting to tracking, QuoteKit handles every step of the proposal workflow.
-            </p>
-          </div>
-          <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {features.map((f, i) => (
-              <div
-                key={f.title}
-                className="group rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5"
-                style={{ animationDelay: `${i * 80}ms` }}
-              >
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-accent text-accent-foreground">
-                  <f.icon className="h-5 w-5" />
+          <h2 className="text-center font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
+            One scan, unlimited access
+          </h2>
+          <div className="mt-12 overflow-hidden rounded-3xl bg-[#eef0f3]">
+            <div className="grid items-center gap-8 md:grid-cols-2">
+              <div className="px-8 py-12 sm:px-14 md:py-16">
+                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full border-2 border-primary">
+                  <Plane className="h-6 w-6 text-primary" strokeWidth={2.25} />
                 </div>
-                <h3 className="font-display text-lg font-semibold text-foreground">{f.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{f.description}</p>
+                <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+                  Backup Passports and IDs for safe travels and simple booking.
+                </h3>
               </div>
-            ))}
+              <div className="flex items-end justify-center md:justify-end md:pt-12">
+                <img
+                  src={appIdDetail.url}
+                  alt="SafePlus ID detail screen"
+                  className="w-[78%] max-w-[420px] translate-y-4 md:translate-y-8"
+                  loading="lazy"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
 
       {/* How it works */}
       <section className="bg-muted/50 py-24">
