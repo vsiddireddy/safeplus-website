@@ -295,22 +295,23 @@ export default function Landing() {
             One scan, unlimited access
           </h2>
           <div className="relative mt-12 overflow-hidden rounded-3xl bg-[#eef0f3]">
-            <div className="grid items-center gap-8 md:grid-cols-2">
-              <div className="px-8 py-12 sm:px-14 md:py-20">
+            <div className="grid items-center gap-4 md:grid-cols-5">
+              <div className="px-8 py-12 sm:px-14 md:col-span-3 md:py-20 md:pr-0">
                 <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   Backup Passports and IDs for safe travels and simple booking.
                 </h3>
               </div>
-              <div className="relative h-[360px] sm:h-[420px] md:h-[460px]">
+              <div className="relative h-[480px] sm:h-[560px] md:col-span-2 md:h-[600px]">
                 <img
                   src={appIdDetail.url}
                   alt="SafePlus ID detail screen"
-                  className="absolute left-1/2 top-12 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-12 md:translate-x-0 md:w-[380px]"
+                  className="absolute left-1/2 top-12 w-[300px] max-w-none -translate-x-1/2 sm:w-[360px] md:left-0 md:translate-x-0 md:w-[400px]"
                   loading="lazy"
                 />
               </div>
             </div>
           </div>
+
 
         </div>
       </section>
