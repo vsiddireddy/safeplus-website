@@ -294,18 +294,18 @@ export default function Landing() {
           <h2 className="text-center font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
             One scan, unlimited access
           </h2>
-          <div className="relative mx-auto mt-12 w-[80.5%] overflow-hidden rounded-3xl bg-[#eef0f3]">
-            <div className="grid items-center gap-4 md:grid-cols-5">
-              <div className="px-8 py-12 sm:px-14 md:col-span-3 md:py-20 md:pr-0">
+          <div className="relative mx-auto mt-12 overflow-hidden rounded-3xl bg-[#eef0f3]">
+            <div className="grid items-center gap-4 md:grid-cols-2">
+              <div className="px-8 py-12 sm:px-14 md:py-24 md:pl-20">
                 <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   Backup Passports and IDs for safe travels and simple booking.
                 </h3>
               </div>
-              <div className="relative h-[580px] sm:h-[670px] md:col-span-2 md:h-[720px]">
+              <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
                 <img
                   src={appIdDetail.url}
                   alt="SafePlus ID detail screen"
-                  className="absolute left-1/2 top-12 w-[300px] max-w-none -translate-x-1/2 sm:w-[360px] md:left-0 md:translate-x-0 md:w-[400px]"
+                  className="absolute left-1/2 top-12 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-16 md:translate-x-0 md:w-[360px]"
                   loading="lazy"
                 />
               </div>
