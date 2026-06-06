@@ -327,8 +327,8 @@ export default function Landing() {
                 Get alerts before gift cards expire.
               </h3>
               <img
-                src={appGiftcard.url}
-                alt="SafePlus gift card expiration alert"
+                src={appPasswordDetail.url}
+                alt="SafePlus password detail screen"
                 className="mt-10 w-[320px] max-w-none sm:w-[380px] md:w-[420px]"
                 loading="lazy"
               />
