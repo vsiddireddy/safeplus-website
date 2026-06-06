@@ -294,7 +294,7 @@ export default function Landing() {
           <h2 className="text-center font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
             One scan, unlimited access
           </h2>
-          <div className="relative mx-auto mt-12 w-[85.5%] overflow-hidden rounded-3xl bg-[#eef0f3]">
+          <div className="relative mx-auto mt-12 w-[81.2%] overflow-hidden rounded-3xl bg-[#eef0f3]">
             <div className="grid items-center gap-4 md:grid-cols-2">
               <div className="px-8 py-12 sm:px-14 md:py-24 md:pl-20">
                 <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
