@@ -305,7 +305,7 @@ export default function Landing() {
                 <img
                   src={appIdDetail.url}
                   alt="SafePlus ID detail screen"
-                  className="absolute left-1/2 top-8 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-16 md:translate-x-0 md:w-[360px]"
+                  className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-16 md:translate-x-0 md:w-[360px]"
                   loading="lazy"
                 />
               </div>
