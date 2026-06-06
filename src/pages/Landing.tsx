@@ -360,6 +360,35 @@ export default function Landing() {
             </div>
           </div>
 
+          {/* Third row - all other items */}
+          <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] px-8 py-12 sm:px-14 sm:py-14">
+            <h3 className="text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+              And so much more.
+            </h3>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              {[
+                { name: "Birth & Marriage Certificates", icon: ScrollText },
+                { name: "Gift Cards", icon: Gift },
+                { name: "Loyalty & Membership", icon: Award },
+                { name: "Receipts", icon: Receipt },
+                { name: "Vehicle Registration & Title", icon: Car },
+                { name: "Health Documents", icon: HeartPulse },
+                { name: "Boarding Passes", icon: Plane },
+                { name: "Known Travel Number", icon: Globe2 },
+                { name: "Lease & Rental Documents", icon: Home },
+                { name: "Mortgage Documents", icon: Landmark },
+              ].map(({ name, icon: Icon }) => (
+                <span
+                  key={name}
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 font-display text-base font-semibold text-foreground shadow-sm"
+                >
+                  <Icon className="h-[18px] w-[18px] text-foreground" strokeWidth={2} />
+                  {name}
+                </span>
+              ))}
+            </div>
+          </div>
+
         </div>
       </section>
 
