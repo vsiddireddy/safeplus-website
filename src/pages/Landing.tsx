@@ -367,25 +367,26 @@ export default function Landing() {
             </h3>
             <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
               {[
-                { name: "Birth & Marriage Certificates", icon: ScrollText },
-                { name: "Gift Cards", icon: Gift },
-                { name: "Loyalty & Membership", icon: Award },
-                { name: "Receipts", icon: Receipt },
-                { name: "Vehicle Registration & Title", icon: Car },
-                { name: "Health Documents", icon: HeartPulse },
-                { name: "Boarding Passes", icon: Plane },
-                { name: "Known Travel Number", icon: Globe2 },
-                { name: "Lease & Rental Documents", icon: Home },
-                { name: "Mortgage Documents", icon: Landmark },
-              ].map(({ name, icon: Icon }) => (
+                { name: "Birth & Marriage Certificates", icon: ScrollText, color: "#f48e39" },
+                { name: "Gift Cards", icon: Gift, color: "#f48e39" },
+                { name: "Loyalty & Membership", icon: Award, color: "#f48e39" },
+                { name: "Receipts", icon: Receipt, color: "#f48e39" },
+                { name: "Vehicle Registration & Title", icon: Car, color: "#f48e39" },
+                { name: "Health Documents", icon: HeartPulse, color: "#e15821" },
+                { name: "Boarding Passes", icon: Plane, color: "#e15821" },
+                { name: "Known Travel Number", icon: Globe2, color: "#e15821" },
+                { name: "Lease & Rental Documents", icon: Home, color: "#e15821" },
+                { name: "Mortgage Documents", icon: Landmark, color: "#e15821" },
+              ].map(({ name, icon: Icon, color }) => (
                 <div
                   key={name}
-                  className="flex flex-col items-center justify-center gap-3 rounded-2xl bg-white px-4 py-6 text-center shadow-sm transition-transform hover:scale-[1.02]"
+                  className="flex flex-col items-center justify-center gap-3 rounded-2xl px-4 py-6 text-center shadow-sm transition-transform hover:scale-[1.02]"
+                  style={{ backgroundColor: color }}
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#eef0f3]">
-                    <Icon className="h-5 w-5 text-foreground" strokeWidth={2} />
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/20">
+                    <Icon className="h-5 w-5 text-white" strokeWidth={2} />
                   </div>
-                  <span className="font-display text-sm font-semibold leading-snug text-foreground">
+                  <span className="font-display text-sm font-semibold leading-snug text-white">
                     {name}
                   </span>
                 </div>
