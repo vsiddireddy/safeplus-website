@@ -34,6 +34,7 @@ import appHome from "@/assets/app-home.png";
 import appPasswords from "@/assets/app-passwords.png";
 import appCard from "@/assets/app-card.png";
 import appIdDetail from "@/assets/app-id-detail.png.asset.json";
+import appGiftcard from "@/assets/app-giftcard.png.asset.json";
 
 const features = [
   {
