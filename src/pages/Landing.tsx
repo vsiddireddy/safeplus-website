@@ -365,7 +365,7 @@ export default function Landing() {
             <h3 className="text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
               And so much more.
             </h3>
-            <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+            <div className="mt-10 grid grid-cols-2 auto-rows-fr gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
               {[
                 { name: "Birth & Marriage Certificates", icon: ScrollText, color: "#f48e39" },
                 { name: "Gift Cards", icon: Gift, color: "#f48e39" },
