@@ -365,7 +365,7 @@ export default function Landing() {
             <h3 className="text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
               And so much more.
             </h3>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
               {[
                 { name: "Birth & Marriage Certificates", icon: ScrollText },
                 { name: "Gift Cards", icon: Gift },
@@ -378,13 +378,17 @@ export default function Landing() {
                 { name: "Lease & Rental Documents", icon: Home },
                 { name: "Mortgage Documents", icon: Landmark },
               ].map(({ name, icon: Icon }) => (
-                <span
+                <div
                   key={name}
-                  className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 font-display text-base font-semibold text-foreground shadow-sm"
+                  className="flex flex-col items-center justify-center gap-3 rounded-2xl bg-white px-4 py-6 text-center shadow-sm transition-transform hover:scale-[1.02]"
                 >
-                  <Icon className="h-[18px] w-[18px] text-foreground" strokeWidth={2} />
-                  {name}
-                </span>
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#eef0f3]">
+                    <Icon className="h-5 w-5 text-foreground" strokeWidth={2} />
+                  </div>
+                  <span className="font-display text-sm font-semibold leading-snug text-foreground">
+                    {name}
+                  </span>
+                </div>
               ))}
             </div>
           </div>
