@@ -301,9 +301,9 @@ export default function Landing() {
             One scan, unlimited access
           </h2>
           <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
-            <div className="grid items-center gap-4 md:grid-cols-2">
-              <div className="px-8 py-12 sm:px-14 md:py-24 md:pl-20">
-                <h3 className="max-w-[420px] font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+            <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
+              <div className="px-8 py-12 sm:px-14 md:py-24 md:px-10">
+                <h3 className="max-w-[560px] font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   Securely back up your driver's license, passport, and IDs for instant access.
                 </h3>
               </div>
@@ -311,7 +311,7 @@ export default function Landing() {
                 <img
                   src={appIdDetail.url}
                   alt="SafePlus ID detail screen"
-                  className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-16 md:translate-x-0 md:w-[360px]"
+                  className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-10 md:translate-x-0 md:w-[320px]"
                   loading="lazy"
                 />
               </div>
