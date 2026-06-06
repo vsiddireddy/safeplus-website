@@ -323,8 +323,22 @@ export default function Landing() {
 
           {/* Second row - two half-width cards */}
           <div className="mx-auto mt-6 grid w-[90%] gap-6 sm:w-[80.4%] md:grid-cols-2">
-            {/* Left placeholder slot */}
-            <div className="hidden md:block" aria-hidden="true" />
+            {/* Left card - Card details */}
+            <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3]">
+              <div className="flex flex-col items-start px-8 pt-12 sm:px-10 sm:pt-14">
+                <h3 className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+                  Keep card details secure and ready to copy.
+                </h3>
+                <div className="mt-8 w-full max-w-[360px] self-center overflow-hidden aspect-[2/3]">
+                  <img
+                    src={appCardDetail.url}
+                    alt="SafePlus card detail screen"
+                    className="block w-full h-auto"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
 
             {/* Right card - Gift card alerts */}
             <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3]">
