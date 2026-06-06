@@ -318,6 +318,21 @@ export default function Landing() {
               </div>
             </div>
           </div>
+
+          {/* Second feature card - Gift card alerts */}
+          <div className="relative mx-auto mt-6 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
+            <div className="flex flex-col items-center px-8 pt-12 sm:px-14 sm:pt-16">
+              <h3 className="max-w-[560px] text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+                Get alerts before gift cards expire.
+              </h3>
+              <img
+                src={appGiftcard.url}
+                alt="SafePlus gift card expiration alert"
+                className="mt-10 w-[320px] max-w-none sm:w-[380px] md:w-[420px]"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
