@@ -25,7 +25,6 @@ import {
   Home,
   Landmark,
   KeyRound,
-
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
@@ -35,7 +34,6 @@ import appHome from "@/assets/app-home.png";
 import appPasswords from "@/assets/app-passwords.png";
 import appCard from "@/assets/app-card.png";
 import appIdDetail from "@/assets/app-id-detail.png.asset.json";
-
 
 const features = [
   {
@@ -123,10 +121,18 @@ export default function Landing() {
             <span className="font-display text-lg font-bold text-foreground">SafePlus</span>
           </div>
           <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-6 text-sm font-medium text-foreground">
-            <a href="#features" className="hover:text-primary transition-colors">Features</a>
-            <a href="#security" className="hover:text-primary transition-colors">Security</a>
-            <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
-            <a href="#blog" className="hover:text-primary transition-colors">Blog</a>
+            <a href="#features" className="hover:text-primary transition-colors">
+              Features
+            </a>
+            <a href="#security" className="hover:text-primary transition-colors">
+              Security
+            </a>
+            <a href="#faq" className="hover:text-primary transition-colors">
+              FAQ
+            </a>
+            <a href="#blog" className="hover:text-primary transition-colors">
+              Blog
+            </a>
           </div>
           {/* <div className="flex items-center gap-3">
             <Button variant="ghost" size="sm" onClick={() => navigate("/login")}>
@@ -297,7 +303,7 @@ export default function Landing() {
           <div className="relative mx-auto mt-12 w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3]">
             <div className="grid items-center gap-4 md:grid-cols-2">
               <div className="px-8 py-12 sm:px-14 md:py-24 md:pl-20">
-                <h3 className="max-w-[380px] font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+                <h3 className="max-w-[400px] font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   Securely back up your driver's license, passport, and IDs for instant access
                 </h3>
               </div>
@@ -311,11 +317,8 @@ export default function Landing() {
               </div>
             </div>
           </div>
-
-
         </div>
       </section>
-
 
       {/* How it works */}
       <section className="bg-muted/50 py-24">
