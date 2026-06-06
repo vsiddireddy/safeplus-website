@@ -298,7 +298,7 @@ export default function Landing() {
             <div className="grid items-center gap-4 md:grid-cols-2">
               <div className="px-8 py-12 sm:px-14 md:py-24 md:pl-20">
                 <h3 className="max-w-[340px] font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
-                  Backup Passports and IDs for safe travels and simple booking.
+                  Securely back up your driver's license, passport, and IDs for instant access
                 </h3>
               </div>
               <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
