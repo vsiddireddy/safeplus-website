@@ -328,7 +328,7 @@ export default function Landing() {
             {/* Right card - Gift card alerts */}
             <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3]">
               <div className="flex flex-col items-start px-8 pt-12 sm:px-10 sm:pt-14">
-                <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+                <h3 className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   Get alerts before gift cards expire.
                 </h3>
                 <img
