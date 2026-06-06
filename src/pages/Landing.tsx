@@ -320,20 +320,27 @@ export default function Landing() {
             </div>
           </div>
 
-          {/* Second feature card - Gift card alerts */}
-          <div className="relative mx-auto mt-6 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
-            <div className="flex flex-col items-center px-8 pt-12 sm:px-14 sm:pt-16">
-              <h3 className="max-w-[560px] text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
-                Get alerts before gift cards expire.
-              </h3>
-              <img
-                src={appPasswordDetail.url}
-                alt="SafePlus password detail screen"
-                className="mt-10 w-[320px] max-w-none sm:w-[380px] md:w-[420px]"
-                loading="lazy"
-              />
+          {/* Second row - two half-width cards */}
+          <div className="mx-auto mt-6 grid w-[90%] gap-6 sm:w-[80.4%] md:grid-cols-2">
+            {/* Left placeholder slot */}
+            <div className="hidden md:block" aria-hidden="true" />
+
+            {/* Right card - Gift card alerts */}
+            <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3]">
+              <div className="flex flex-col items-start px-8 pt-12 sm:px-10 sm:pt-14">
+                <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+                  Get alerts before gift cards expire.
+                </h3>
+                <img
+                  src={appPasswordDetail.url}
+                  alt="SafePlus password detail screen"
+                  className="mt-8 w-full max-w-[360px] self-center"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
+
         </div>
       </section>
 
