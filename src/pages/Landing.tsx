@@ -331,14 +331,15 @@ export default function Landing() {
                 <h3 className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   Get alerts before gift cards expire.
                 </h3>
-                <div className="mt-8 w-full max-w-[360px] self-center overflow-hidden" style={{ maxHeight: "360px" }}>
+                <div className="mt-8 w-full max-w-[360px] self-center overflow-hidden aspect-[967/1152]">
                   <img
                     src={appPasswordDetail.url}
                     alt="SafePlus password detail screen"
-                    className="block w-full"
+                    className="block w-full h-auto"
                     loading="lazy"
                   />
                 </div>
+
 
               </div>
             </div>
