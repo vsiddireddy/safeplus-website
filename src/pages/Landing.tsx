@@ -327,7 +327,8 @@ export default function Landing() {
             <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3]">
               <div className="flex flex-col items-start px-8 pt-12 sm:px-10 sm:pt-14">
                 <h3 className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
-                  Secure card details, ready to copy.<br />
+                  Secure card details, ready to copy.
+                  <br />
                 </h3>
                 <div className="mt-8 w-full max-w-[360px] self-center overflow-hidden aspect-[2/3]">
                   <img
@@ -354,8 +355,6 @@ export default function Landing() {
                     loading="lazy"
                   />
                 </div>
-
-
               </div>
             </div>
           </div>
@@ -380,20 +379,17 @@ export default function Landing() {
               ].map(({ name, icon: Icon, color }) => (
                 <div
                   key={name}
-                  className="flex h-full flex-col items-center gap-6 rounded-2xl px-4 py-5 text-center shadow-sm transition-transform hover:scale-[1.02]"
+                  className="flex h-full flex-col items-center gap-6 rounded-2xl px-4 py-3 text-center shadow-sm transition-transform hover:scale-[1.02]"
                   style={{ backgroundColor: color }}
                 >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20">
                     <Icon className="h-5 w-5 text-white" strokeWidth={2} />
                   </div>
-                  <span className="font-display text-sm font-semibold leading-snug text-white">
-                    {name}
-                  </span>
+                  <span className="font-display text-sm font-semibold leading-snug text-white">{name}</span>
                 </div>
               ))}
             </div>
           </div>
-
         </div>
       </section>
 
