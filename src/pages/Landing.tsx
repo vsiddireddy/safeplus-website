@@ -25,6 +25,7 @@ import {
   Home,
   Landmark,
   KeyRound,
+  Plane,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
@@ -33,6 +34,8 @@ import googlePlayBadge from "@/assets/google-play-badge.svg";
 import appHome from "@/assets/app-home.png";
 import appPasswords from "@/assets/app-passwords.png";
 import appCard from "@/assets/app-card.png";
+import appIdDetail from "@/assets/app-id-detail.png.asset.json";
+
 
 const features = [
   {
