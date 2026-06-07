@@ -393,7 +393,7 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* How it works — commented out
+      {/* How it works */}
       <section className="bg-muted/50 py-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
@@ -413,7 +413,6 @@ export default function Landing() {
           </div>
         </div>
       </section>
-      */}
 
       {/* Checklist / value props */}
       <section className="py-24">
