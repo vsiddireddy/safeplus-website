@@ -37,6 +37,7 @@ import appIdDetail from "@/assets/app-id-detail.png.asset.json";
 import appGiftcard from "@/assets/app-giftcard.png.asset.json";
 import appPasswordDetail from "@/assets/app-password-detail.png.asset.json";
 import appCardDetail from "@/assets/app-card-detail.png.asset.json";
+import appLocked from "@/assets/app-locked.png.asset.json";
 
 const features = [
   {
@@ -417,6 +418,25 @@ export default function Landing() {
               <p className="font-display text-lg font-bold leading-snug text-white sm:text-xl">
                 We use top-tier AES 256-bit encryption.
               </p>
+            </div>
+          </div>
+
+          {/* Hide sensitive details block */}
+          <div className="mx-auto mt-4 max-w-3xl overflow-hidden rounded-2xl bg-white shadow-sm">
+            <div className="grid items-center gap-6 sm:grid-cols-2">
+              <div className="flex items-center justify-center pt-6 sm:pt-8">
+                <img
+                  src={appLocked.url}
+                  alt="SafePlus app locked screen"
+                  className="w-[200px] max-w-full sm:w-[240px]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="px-8 pb-8 sm:px-10 sm:py-10">
+                <h3 className="font-display text-2xl font-extrabold leading-tight tracking-tight text-foreground sm:text-3xl">
+                  Hide sensitive details to enhance security.
+                </h3>
+              </div>
             </div>
           </div>
           {/* Steps grid — temporarily hidden
