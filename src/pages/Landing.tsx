@@ -537,7 +537,7 @@ export default function Landing() {
                   Your cards, documents, and passwords stay secure and instantly accessible on iOS and Android.
                 </p>
               </div>
-              <div className="flex gap-6">
+              <div className="flex gap-12">
                 <div className="flex flex-col items-center gap-3">
                   <img src={frameIos.url} alt="Scan to download SafePlus on the App Store" className="h-[250px] w-[250px] object-contain" loading="lazy" />
                   <a href="#" aria-label="Download on the App Store" className="-mt-12">
