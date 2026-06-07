@@ -398,7 +398,7 @@ export default function Landing() {
       {/* How it works */}
       <section id="security" className="bg-muted/50 py-24">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="mx-auto max-w-[620px] text-center">
             <h2 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">Download with Confidence</h2>
             <p className="mt-4 text-lg text-muted-foreground">Only you can access your data, never SafePlus. Nothing is stored on servers or the cloud, and no account or email is required.</p>
           </div>
