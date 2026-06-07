@@ -557,7 +557,7 @@ export default function Landing() {
       </section>
 
 
-      {/* CTA */}
+      {/* CTA — commented out
       <section className="relative overflow-hidden py-24">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent to-primary/5" />
         <div className="relative mx-auto max-w-6xl px-6 text-center">
@@ -569,7 +569,7 @@ export default function Landing() {
           </p>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Button size="lg" className="h-12 px-8 text-base w-full sm:w-auto" onClick={() => navigate("/signup")}>
-              Get started — it's free
+              Get started — it&apos;s free
               <ArrowRight className="ml-1 h-4 w-4" />
             </Button>
             <Button
@@ -583,6 +583,7 @@ export default function Landing() {
           </div>
         </div>
       </section>
+      */}
 
       {/* Footer */}
       <footer className="border-t border-border py-8">
