@@ -540,13 +540,13 @@ export default function Landing() {
               <div className="flex gap-6">
                 <div className="flex flex-col items-center gap-3">
                   <img src={frameIos.url} alt="Scan to download SafePlus on the App Store" className="h-[250px] w-[250px] object-contain" loading="lazy" />
-                  <a href="#" aria-label="Download on the App Store" className="-mt-6">
+                  <a href="#" aria-label="Download on the App Store" className="-mt-12">
                     <img src={appStoreBadge} alt="Download on the App Store" className="h-10" />
                   </a>
                 </div>
                 <div className="flex flex-col items-center gap-3">
                   <img src={frameAndroid.url} alt="Scan to get SafePlus on Google Play" className="h-[250px] w-[250px] object-contain" loading="lazy" />
-                  <a href="#" aria-label="Get it on Google Play" className="-mt-6">
+                  <a href="#" aria-label="Get it on Google Play" className="-mt-12">
                     <img src={googlePlayBadge} alt="Get it on Google Play" className="h-10" />
                   </a>
                 </div>
