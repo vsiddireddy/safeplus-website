@@ -401,8 +401,13 @@ export default function Landing() {
       <section id="security" className="bg-muted/50 py-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-[620px] text-center">
-            <h2 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">Download with Confidence</h2>
-            <p className="mt-4 text-lg text-muted-foreground">Only you can access your data, never SafePlus. Nothing is stored on servers or the cloud, and no account or email is required.</p>
+            <h2 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+              Download with Confidence
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Only you can access your data, never SafePlus. Nothing is stored on servers or the cloud, and no account
+              or email is required.
+            </p>
           </div>
           <div className="mx-auto mt-8 grid max-w-[620px] grid-cols-1 gap-4 sm:grid-cols-2">
             <div
@@ -456,7 +461,6 @@ export default function Landing() {
             ))}
           </div>
           */}
-
         </div>
       </section>
 
@@ -474,11 +478,11 @@ export default function Landing() {
             {[
               {
                 q: "What devices does SafePlus support?",
-                a: "SafePlus supports iPhone, iPad, Mac, Apple Watch, and Apple Vision Pro. All SafePlus+ plans work across every supported platform.",
+                a: "SafePlus supports iPhone, iPad, Android phones, and Android tablets, allowing you to securely access your information across your preferred mobile devices.",
               },
               {
-                q: "What makes SafePlus private and secure?",
-                a: "SafePlus stores your data only on your device, protected by AES-256 encryption and unlocked with Face ID, Touch ID, or your PIN. No account, email, or cloud sync is required.",
+                q: "Is SafePlus free?",
+                a: "Yes. SafePlus is completely free to use, and you have unlimited access to store cards, documents, and passwords. There are no subscriptions, no paywalls, and no, definitely no ads.",
               },
               {
                 q: "How is my data protected on device?",
@@ -509,9 +513,7 @@ export default function Landing() {
                 <AccordionTrigger className="py-5 text-left font-display text-base font-semibold text-foreground hover:no-underline">
                   {item.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
-                  {item.a}
-                </AccordionContent>
+                <AccordionContent className="text-sm text-muted-foreground leading-relaxed">{item.a}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
