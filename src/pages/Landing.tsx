@@ -402,7 +402,7 @@ export default function Landing() {
             <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">Download with Confidence</h2>
             <p className="mt-4 text-lg text-muted-foreground">Only you can access your data, not even SafePlus. Nothing is stored on servers or the cloud.</p>
           </div>
-          <div className="mx-auto mt-12 grid max-w-[620px] grid-cols-1 gap-4 sm:grid-cols-2">
+          <div className="mx-auto mt-8 grid max-w-[620px] grid-cols-1 gap-4 sm:grid-cols-2">
             <div
               className="flex min-h-[180px] flex-col justify-between rounded-2xl p-6"
               style={{ backgroundColor: "#f48e39" }}
