@@ -482,24 +482,25 @@ export default function Landing() {
               },
               {
                 q: "Is SafePlus free?",
-                a: "Yes. SafePlus is completely free to use, and you have unlimited access to store cards, documents, and passwords. There are no subscriptions, no paywalls, and no, definitely no ads.",
+                a: "Yes. SafePlus is completely free to use with unlimited access to store cards, documents, and passwords. There are no subscriptions, no paywalls, and no ads.",
               },
               {
-                q: "How is my data protected on device?",
-                a: "Your vault is encrypted with AES-256 and the keys never leave your device. The app automatically locks after a period of inactivity that you can adjust.",
+                q: "How is my data protected?",
+                a: "Your data never leaves your device. So only you can see your data. Additionally, SafePlus has on-device encryption for each card, document, and password.",
               },
               {
-                q: "How is my data secured in iCloud?",
-                a: "If you enable iCloud backup, your vault is end-to-end encrypted before it ever leaves your device. SafePlus cannot read or recover its contents.",
+                q: "Will SafePlus send me reminders before my cards and documents expire?",
+                a: "Yes. SafePlus sends reminders before your cards and documents expire.",
               },
               {
-                q: "How can I restore my data?",
-                a: "You can restore from an iCloud backup or from an encrypted export file you created earlier. Both require your master credentials to decrypt.",
+                q: "What type of data can I store?",
+                a: "You can store driver's licenses, IDs, passports, credit & debit cards, loyalty & membership cards, receipts, boarding passes, and much more. Essentially, any card or document can be scanned and stored in SafePlus.",
               },
               {
-                q: "What is SafePlus+ and what does it cost?",
-                a: "SafePlus+ is the optional premium plan that unlocks advanced features across all your devices. Pricing is available on the App Store.",
+                q: "What is the difference between SafePlus and other wallet apps?",
+                a: "SafePlus combines secure storage for cards, documents, and passwords in one app. Unlike many wallet apps, SafePlus stores your data locally on your device, requires no account, has no subscriptions, no paywalls, and no ads.",
               },
+              /*
               {
                 q: "What happens if my subscription expires?",
                 a: "Your existing data stays safe and accessible. Premium features are paused until you renew, but you'll never lose access to anything you've saved.",
@@ -508,6 +509,7 @@ export default function Landing() {
                 q: "Is there a free trial?",
                 a: "Yes. You can try SafePlus+ free, and the core app is always free to use with no account required.",
               },
+              */
             ].map((item, i) => (
               <AccordionItem key={i} value={`item-${i}`} className="border-border">
                 <AccordionTrigger className="py-5 text-left font-display text-base font-semibold text-foreground hover:no-underline">
