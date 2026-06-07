@@ -398,7 +398,7 @@ export default function Landing() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">Download with Confidence</h2>
-            <p className="mt-4 text-lg text-muted-foreground">QuoteKit makes your proposal process effortless.</p>
+            <p className="mt-4 text-lg text-muted-foreground">SafePlus makes your proposal process effortless.</p>
           </div>
           <div className="mx-auto mt-12 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2">
             <div
@@ -406,7 +406,7 @@ export default function Landing() {
               style={{ backgroundColor: "#f48e39" }}
             >
               <p className="font-display text-lg font-bold leading-snug text-white sm:text-xl">
-                Only you, not even QuoteKit, can view your data.
+                Only you, not even SafePlus, can view your data.
               </p>
             </div>
             <div
@@ -441,7 +441,7 @@ export default function Landing() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
             <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
-              Why teams switch to QuoteKit
+              Why teams switch to SafePlus
             </h2>
             <ul className="mt-10 grid gap-4 text-left sm:grid-cols-2">
               {[
@@ -470,7 +470,7 @@ export default function Landing() {
             Ready to send proposals that win?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-muted-foreground">
-            Join hundreds of teams already using QuoteKit to close more deals.
+            Join hundreds of teams already using SafePlus to close more deals.
           </p>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Button size="lg" className="h-12 px-8 text-base w-full sm:w-auto" onClick={() => navigate("/signup")}>
