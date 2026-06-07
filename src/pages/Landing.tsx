@@ -436,7 +436,7 @@ export default function Landing() {
               </div>
               <div className="pl-2 pr-8 pb-8 sm:pl-4 sm:pr-10 sm:py-10">
                 <h3 className="font-display text-2xl font-extrabold leading-tight tracking-tight text-foreground sm:text-3xl">
-                  Hide sensitive details to enhance security.
+                  Automatically locks after a period of inactivity that you can adjust.
                 </h3>
               </div>
             </div>
