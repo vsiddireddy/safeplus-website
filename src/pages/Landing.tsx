@@ -467,7 +467,7 @@ export default function Landing() {
       </section>
 
       {/* Frequently Asked Questions */}
-      <section id="faq" className="bg-background py-24">
+      <section id="faq" className="bg-white py-24">
         <div className="mx-auto max-w-3xl px-6">
           <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-card">
             <HelpCircle className="h-7 w-7 text-muted-foreground" strokeWidth={1.5} />
