@@ -540,7 +540,7 @@ export default function Landing() {
               <div className="flex gap-6">
                 <div className="flex flex-col items-center gap-3">
                   <div className="rounded-xl bg-background p-1 shadow-sm">
-                    <img src={frameIos.url} alt="Scan to download SafePlus on the App Store" className="h-44 w-44 object-contain" loading="lazy" />
+                    <img src={frameIos.url} alt="Scan to download SafePlus on the App Store" className="h-[200px] w-[200px] object-contain" loading="lazy" />
                   </div>
                   <a href="#" aria-label="Download on the App Store">
                     <img src={appStoreBadge} alt="Download on the App Store" className="h-10" />
@@ -548,7 +548,7 @@ export default function Landing() {
                 </div>
                 <div className="flex flex-col items-center gap-3">
                   <div className="rounded-xl bg-background p-1 shadow-sm">
-                    <img src={frameAndroid.url} alt="Scan to get SafePlus on Google Play" className="h-44 w-44 object-contain" loading="lazy" />
+                    <img src={frameAndroid.url} alt="Scan to get SafePlus on Google Play" className="h-[200px] w-[200px] object-contain" loading="lazy" />
                   </div>
                   <a href="#" aria-label="Get it on Google Play">
                     <img src={googlePlayBadge} alt="Get it on Google Play" className="h-10" />
