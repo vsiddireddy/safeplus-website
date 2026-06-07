@@ -548,7 +548,7 @@ export default function Landing() {
                 </div>
                 <div className="flex flex-col items-center gap-3">
                   <div className="rounded-xl bg-background p-3 shadow-sm">
-                    <img src={frameAndroid.url} alt="Scan to get SafePlus on Google Play" className="h-32 w-32" loading="lazy" />
+                    <img src={frameAndroid.url} alt="Scan to get SafePlus on Google Play" className="h-32 w-32 object-contain" loading="lazy" />
                   </div>
                   <a href="#" aria-label="Get it on Google Play">
                     <img src={googlePlayBadge} alt="Get it on Google Play" className="h-10" />
