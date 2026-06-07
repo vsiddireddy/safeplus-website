@@ -400,6 +400,7 @@ export default function Landing() {
             <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">Download with Confidence</h2>
             <p className="mt-4 text-lg text-muted-foreground">QuoteKit makes your proposal process effortless.</p>
           </div>
+          {/* Steps grid — temporarily hidden
           <div className="mt-16 grid gap-8 sm:grid-cols-3">
             {steps.map((s) => (
               <div key={s.num} className="text-center">
@@ -411,6 +412,7 @@ export default function Landing() {
               </div>
             ))}
           </div>
+          */}
         </div>
       </section>
 
