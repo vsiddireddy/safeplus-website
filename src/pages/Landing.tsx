@@ -424,11 +424,11 @@ export default function Landing() {
           {/* Hide sensitive details block */}
           <div className="mx-auto mt-4 max-w-3xl overflow-hidden rounded-2xl bg-white shadow-sm">
             <div className="grid items-center gap-6 sm:grid-cols-2">
-              <div className="flex items-center justify-center pt-6 sm:pt-8">
+              <div className="relative h-[260px] sm:h-[300px] overflow-hidden flex justify-center">
                 <img
                   src={appLocked.url}
                   alt="SafePlus app locked screen"
-                  className="w-[200px] max-w-full sm:w-[240px]"
+                  className="absolute top-8 w-[220px] sm:w-[260px] max-w-none"
                   loading="lazy"
                 />
               </div>
