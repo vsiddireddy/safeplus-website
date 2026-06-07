@@ -399,7 +399,7 @@ export default function Landing() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">Download with Confidence</h2>
-            {/* <p className="mt-4 text-lg text-muted-foreground">SafePlus makes your proposal process effortless.</p> */}
+            <p className="mt-4 text-lg text-muted-foreground">SafePlus makes your proposal process effortless.</p>
           </div>
           <div className="mx-auto mt-12 grid max-w-[620px] grid-cols-1 gap-4 sm:grid-cols-2">
             <div
