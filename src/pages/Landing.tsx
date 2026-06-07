@@ -423,7 +423,7 @@ export default function Landing() {
 
           {/* Hide sensitive details block */}
           <div className="mx-auto mt-4 max-w-[620px] overflow-hidden rounded-2xl bg-white shadow-sm">
-            <div className="grid items-center gap-6 sm:grid-cols-2">
+            <div className="grid items-center gap-2 sm:grid-cols-2">
               <div className="relative h-[330px] sm:h-[400px] overflow-hidden flex justify-center">
                 <img
                   src={appLocked.url}
