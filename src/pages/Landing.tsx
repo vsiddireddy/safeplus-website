@@ -527,7 +527,7 @@ export default function Landing() {
       {/* Download app */}
       <section className="bg-white pb-24">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="mx-auto w-[85%] rounded-3xl bg-muted/60 p-8 sm:p-12">
+          <div className="mx-auto w-[75%] rounded-3xl bg-muted/60 p-8 sm:p-12">
             <div className="flex flex-col items-start justify-between gap-10 sm:flex-row sm:items-center">
               <div className="max-w-md">
                 <h2 className="font-display text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
