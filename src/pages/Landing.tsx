@@ -460,14 +460,14 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Frequently Asked Questions */}
       <section id="faq" className="bg-background py-24">
         <div className="mx-auto max-w-3xl px-6">
           <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-card">
             <HelpCircle className="h-7 w-7 text-muted-foreground" strokeWidth={1.5} />
           </div>
           <h2 className="mt-6 font-display text-5xl font-extrabold leading-tight tracking-tight text-foreground sm:text-6xl">
-            FAQ
+            Frequently Asked Questions
           </h2>
 
           <Accordion type="single" collapsible defaultValue="item-0" className="mt-10 w-full">
