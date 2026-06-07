@@ -407,7 +407,7 @@ export default function Landing() {
               style={{ backgroundColor: "#f48e39" }}
             >
               <p className="font-display text-lg font-bold leading-snug text-white sm:text-xl">
-                Only you, not even SafePlus, can view your data.
+                Only you can view your data, not even SafePlus.
               </p>
             </div>
             <div
