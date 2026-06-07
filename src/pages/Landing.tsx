@@ -525,7 +525,7 @@ export default function Landing() {
       </section>
 
       {/* Download app */}
-      <section className="bg-background pb-24">
+      <section className="bg-white pb-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="rounded-3xl bg-muted/60 p-8 sm:p-12">
             <div className="flex flex-col items-start justify-between gap-10 sm:flex-row sm:items-center">
