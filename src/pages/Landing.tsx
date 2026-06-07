@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { HelpCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import {
@@ -458,29 +460,61 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Checklist / value props */}
-      <section className="py-24">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-            <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
-              Why teams switch to SafePlus
-            </h2>
-            <ul className="mt-10 grid gap-4 text-left sm:grid-cols-2">
-              {[
-                "Close deals 40% faster",
-                "Professional proposals in minutes",
-                "Real-time open & view tracking",
-                "AI writes your first draft",
-                "Team-wide template library",
-                "No more email attachments",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                  <span className="text-foreground">{item}</span>
-                </li>
-              ))}
-            </ul>
+      {/* FAQ */}
+      <section id="faq" className="bg-background py-24">
+        <div className="mx-auto max-w-3xl px-6">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-card">
+            <HelpCircle className="h-7 w-7 text-muted-foreground" strokeWidth={1.5} />
           </div>
+          <h2 className="mt-6 font-display text-5xl font-extrabold leading-tight tracking-tight text-foreground sm:text-6xl">
+            FAQ
+          </h2>
+
+          <Accordion type="single" collapsible defaultValue="item-0" className="mt-10 w-full">
+            {[
+              {
+                q: "What devices does SafePlus support?",
+                a: "SafePlus supports iPhone, iPad, Mac, Apple Watch, and Apple Vision Pro. All SafePlus+ plans work across every supported platform.",
+              },
+              {
+                q: "What makes SafePlus private and secure?",
+                a: "SafePlus stores your data only on your device, protected by AES-256 encryption and unlocked with Face ID, Touch ID, or your PIN. No account, email, or cloud sync is required.",
+              },
+              {
+                q: "How is my data protected on device?",
+                a: "Your vault is encrypted with AES-256 and the keys never leave your device. The app automatically locks after a period of inactivity that you can adjust.",
+              },
+              {
+                q: "How is my data secured in iCloud?",
+                a: "If you enable iCloud backup, your vault is end-to-end encrypted before it ever leaves your device. SafePlus cannot read or recover its contents.",
+              },
+              {
+                q: "How can I restore my data?",
+                a: "You can restore from an iCloud backup or from an encrypted export file you created earlier. Both require your master credentials to decrypt.",
+              },
+              {
+                q: "What is SafePlus+ and what does it cost?",
+                a: "SafePlus+ is the optional premium plan that unlocks advanced features across all your devices. Pricing is available on the App Store.",
+              },
+              {
+                q: "What happens if my subscription expires?",
+                a: "Your existing data stays safe and accessible. Premium features are paused until you renew, but you'll never lose access to anything you've saved.",
+              },
+              {
+                q: "Is there a free trial?",
+                a: "Yes. You can try SafePlus+ free, and the core app is always free to use with no account required.",
+              },
+            ].map((item, i) => (
+              <AccordionItem key={i} value={`item-${i}`} className="border-border">
+                <AccordionTrigger className="py-5 text-left font-display text-base font-semibold text-foreground hover:no-underline">
+                  {item.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
+                  {item.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </section>
 
