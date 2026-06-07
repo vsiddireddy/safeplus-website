@@ -400,6 +400,25 @@ export default function Landing() {
             <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">Download with Confidence</h2>
             <p className="mt-4 text-lg text-muted-foreground">QuoteKit makes your proposal process effortless.</p>
           </div>
+          <div className="mx-auto mt-12 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2">
+            <div
+              className="flex aspect-square flex-col justify-end rounded-3xl p-8"
+              style={{ backgroundColor: "#f48e39" }}
+            >
+              <p className="font-display text-xl font-bold leading-snug text-white sm:text-2xl">
+                Only you, not even QuoteKit, can view your data.
+              </p>
+            </div>
+            <div
+              className="flex aspect-square flex-col justify-between rounded-3xl p-8"
+              style={{ backgroundColor: "#e15821" }}
+            >
+              <KeyRound className="h-10 w-10 text-white" strokeWidth={2} />
+              <p className="font-display text-xl font-bold leading-snug text-white sm:text-2xl">
+                We use top-tier AES 256-bit encryption.
+              </p>
+            </div>
+          </div>
           {/* Steps grid — temporarily hidden
           <div className="mt-16 grid gap-8 sm:grid-cols-3">
             {steps.map((s) => (
@@ -413,6 +432,7 @@ export default function Landing() {
             ))}
           </div>
           */}
+
         </div>
       </section>
 
