@@ -407,7 +407,7 @@ export default function Landing() {
               style={{ backgroundColor: "#f48e39" }}
             >
               <p className="font-display text-lg font-bold leading-snug text-white sm:text-xl">
-                Only you can view your data, not even SafePlus.
+                App access requires facial recognition, fingerprint, or PIN.
               </p>
             </div>
             <div
@@ -416,7 +416,7 @@ export default function Landing() {
             >
               <KeyRound className="h-8 w-8 text-white" strokeWidth={2} />
               <p className="font-display text-lg font-bold leading-snug text-white sm:text-xl">
-                We use top-tier AES 256-bit encryption.
+                AES-256 on-device encryption protects your stored data.
               </p>
             </div>
           </div>
