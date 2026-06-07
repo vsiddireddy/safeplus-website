@@ -400,7 +400,7 @@ export default function Landing() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">Download with Confidence</h2>
-            <p className="mt-4 text-lg text-muted-foreground">Only you can access your data, not even SafePlus. Nothing is stored on servers or the cloud.</p>
+            <p className="mt-4 text-lg text-muted-foreground">Only you can access your data, never SafePlus. Nothing is stored on servers or the cloud, and no account or email is required.</p>
           </div>
           <div className="mx-auto mt-8 grid max-w-[620px] grid-cols-1 gap-4 sm:grid-cols-2">
             <div
