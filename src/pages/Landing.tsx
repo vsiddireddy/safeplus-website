@@ -540,7 +540,7 @@ export default function Landing() {
               <div className="flex gap-6">
                 <div className="flex flex-col items-center gap-3">
                   <div className="rounded-xl bg-background p-3 shadow-sm">
-                    <img src={frameIos.url} alt="Scan to download SafePlus on the App Store" className="h-32 w-32" loading="lazy" />
+                    <img src={frameIos.url} alt="Scan to download SafePlus on the App Store" className="h-32 w-32 object-contain" loading="lazy" />
                   </div>
                   <a href="#" aria-label="Download on the App Store">
                     <img src={appStoreBadge} alt="Download on the App Store" className="h-10" />
