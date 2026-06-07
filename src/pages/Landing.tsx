@@ -402,19 +402,19 @@ export default function Landing() {
           </div>
           <div className="mx-auto mt-12 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2">
             <div
-              className="flex aspect-square flex-col justify-end rounded-3xl p-8"
+              className="flex min-h-[180px] flex-col justify-end rounded-2xl p-6"
               style={{ backgroundColor: "#f48e39" }}
             >
-              <p className="font-display text-xl font-bold leading-snug text-white sm:text-2xl">
+              <p className="font-display text-lg font-bold leading-snug text-white sm:text-xl">
                 Only you, not even QuoteKit, can view your data.
               </p>
             </div>
             <div
-              className="flex aspect-square flex-col justify-between rounded-3xl p-8"
+              className="flex min-h-[180px] flex-col justify-between rounded-2xl p-6"
               style={{ backgroundColor: "#e15821" }}
             >
-              <KeyRound className="h-10 w-10 text-white" strokeWidth={2} />
-              <p className="font-display text-xl font-bold leading-snug text-white sm:text-2xl">
+              <KeyRound className="h-8 w-8 text-white" strokeWidth={2} />
+              <p className="font-display text-lg font-bold leading-snug text-white sm:text-xl">
                 We use top-tier AES 256-bit encryption.
               </p>
             </div>
