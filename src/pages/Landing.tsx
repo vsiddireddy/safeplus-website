@@ -428,7 +428,7 @@ export default function Landing() {
                 <img
                   src={appLocked.url}
                   alt="SafePlus app locked screen"
-                  className="absolute top-4 right-2 sm:right-0 w-[168px] sm:w-[198px] max-w-none"
+                  className="absolute top-12 right-2 sm:right-0 w-[168px] sm:w-[198px] max-w-none"
                   loading="lazy"
                 />
               </div>
