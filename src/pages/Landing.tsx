@@ -25,6 +25,7 @@ import {
   Plane,
   Globe2,
   Home,
+  Tag,
   Landmark,
   KeyRound,
   Lock,
