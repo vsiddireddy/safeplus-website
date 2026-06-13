@@ -462,6 +462,34 @@ export default function Landing() {
               </div>
             </div>
           </div>
+
+          {/* And it's not just passwords */}
+          <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] px-8 py-12 sm:px-14 sm:py-14">
+            <h3 className="text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+              And it&apos;s not just passwords
+            </h3>
+            <div className="mt-10 grid grid-cols-2 auto-rows-fr gap-4 sm:grid-cols-3">
+              {[
+                { name: "TSA PreCheck / Known Traveler Number", icon: Plane, color: "#f48e39" },
+                { name: "Wi-Fi passwords", icon: Wifi, color: "#f48e39" },
+                { name: "Recovery codes", icon: Shield, color: "#e15821" },
+                { name: "Safe combinations", icon: Lock, color: "#e15821" },
+                { name: "Gate & door codes", icon: KeyRound, color: "#f48e39" },
+                { name: "Apartment / building codes", icon: Home, color: "#f48e39" },
+              ].map(({ name, icon: Icon, color }) => (
+                <div
+                  key={name}
+                  className="flex h-full flex-col items-center gap-6 rounded-2xl px-4 py-5 text-center shadow-sm transition-transform hover:scale-[1.02]"
+                  style={{ backgroundColor: color }}
+                >
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20">
+                    <Icon className="h-5 w-5 text-white" strokeWidth={2} />
+                  </div>
+                  <span className="font-display text-sm font-semibold leading-snug text-white">{name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
