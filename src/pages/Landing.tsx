@@ -421,10 +421,6 @@ export default function Landing() {
             <h2 className="font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
               Your local password manager
             </h2>
-            <p className="mt-6 text-lg text-muted-foreground">
-              Save each login with its username, password, and website. Then search, favorite, and sort to pull up any
-              one in seconds. Encrypted on your device, your passwords never leave your phone.
-            </p>
           </div>
           <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
