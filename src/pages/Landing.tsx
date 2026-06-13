@@ -311,7 +311,8 @@ export default function Landing() {
             Scan once, copy anytime
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-muted-foreground">
-            Cards and documents are automatically organized into labeled fields. Card numbers, CVVs, license and passport numbers are ready to copy with a tap.
+            Cards and documents are automatically organized into labeled fields. Card numbers, CVVs, license and
+            passport numbers are ready to copy with a tap.
           </p>
           <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
@@ -377,7 +378,7 @@ export default function Landing() {
           {/* Third row - all other items */}
           <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] px-8 py-12 sm:px-14 sm:py-14">
             <h3 className="text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
-              And so much more.
+              No card or document left behind.
             </h3>
             <div className="mt-10 grid grid-cols-2 auto-rows-fr gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
               {[
