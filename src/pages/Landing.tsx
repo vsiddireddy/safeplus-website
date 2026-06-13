@@ -40,7 +40,6 @@ import appCard from "@/assets/app-card.png";
 import appIdDetail from "@/assets/app-id-detail.png.asset.json";
 import appGiftcard from "@/assets/app-giftcard.png.asset.json";
 import appPasswordDetail from "@/assets/app-password-detail.png.asset.json";
-import appPasswordGoogle from "@/assets/app-password-google.png.asset.json";
 import pushPassportReminder from "@/assets/push-passport-reminder.png.asset.json";
 import appCardDetail from "@/assets/app-card-detail.png.asset.json";
 import appLocked from "@/assets/app-locked.png.asset.json";
@@ -422,20 +421,22 @@ export default function Landing() {
               Your local password manager
             </h2>
             <p className="mt-6 text-lg text-muted-foreground">
-              Save each login with its username, password, and website. Then search, favorite, and sort to pull up any one in seconds. Encrypted on your device, your passwords never leave your phone.
+              Save each login with its username, password, and website. Then search, favorite, and sort to pull up any
+              one in seconds. Encrypted on your device, your passwords never leave your phone.
             </p>
           </div>
           <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[2fr_3fr]">
               <div className="px-8 py-12 sm:px-14 md:py-24 md:px-10">
                 <h3 className="max-w-[560px] font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
-                  Keep every login secure and instantly searchable.
+                  Store each login with its corresponding username, password, and website, along with optional notes for
+                  additional details.
                 </h3>
               </div>
               <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
                 <img
-                  src={appPasswordGoogle.url}
-                  alt="SafePlus Google password detail screen"
+                  src={appPasswords}
+                  alt="SafePlus passwords screen"
                   className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-10 md:translate-x-0 md:w-[320px]"
                   loading="lazy"
                 />
