@@ -472,10 +472,10 @@ export default function Landing() {
               {[
                 { name: "TSA PreCheck / Known Traveler Number", icon: Plane, color: "#f48e39" },
                 { name: "Wi-Fi passwords", icon: Wifi, color: "#f48e39" },
-                { name: "Recovery codes", icon: Shield, color: "#e15821" },
+                { name: "Recovery codes", icon: Shield, color: "#f48e39" },
                 { name: "Safe combinations", icon: Lock, color: "#e15821" },
-                { name: "Gate & door codes", icon: KeyRound, color: "#f48e39" },
-                { name: "Apartment / building codes", icon: Home, color: "#f48e39" },
+                { name: "Gate & door codes", icon: KeyRound, color: "#e15821" },
+                { name: "Apartment / building codes", icon: Home, color: "#e15821" },
               ].map(({ name, icon: Icon, color }) => (
                 <div
                   key={name}
