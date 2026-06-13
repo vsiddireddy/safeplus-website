@@ -40,6 +40,7 @@ import appCard from "@/assets/app-card.png";
 import appIdDetail from "@/assets/app-id-detail.png.asset.json";
 import appGiftcard from "@/assets/app-giftcard.png.asset.json";
 import appPasswordDetail from "@/assets/app-password-detail.png.asset.json";
+import appPasswordGoogle from "@/assets/app-password-google.png.asset.json";
 import pushPassportReminder from "@/assets/push-passport-reminder.png.asset.json";
 import appCardDetail from "@/assets/app-card-detail.png.asset.json";
 import appLocked from "@/assets/app-locked.png.asset.json";
