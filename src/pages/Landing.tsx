@@ -145,14 +145,17 @@ export default function Landing() {
               Blog
             </a>
           </div>
-          {/* <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm" onClick={() => navigate("/login")}>
-              Sign in
+          <div className="flex items-center gap-3">
+            <Button
+              size="sm"
+              className="rounded-full bg-foreground px-4 text-background hover:bg-foreground/90"
+              onClick={() => {
+                document.getElementById("get-the-app")?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Get the app
             </Button>
-            <Button size="sm" onClick={() => navigate("/signup")}>
-              Get started
-            </Button>
-          </div> */}
+          </div>
         </div>
       </nav>
 
