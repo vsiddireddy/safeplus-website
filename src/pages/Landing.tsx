@@ -165,7 +165,7 @@ export default function Landing() {
             </div> */}
             <h1 className="font-display text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
               <span className="block" style={{ color: "#f48e39" }}>
-                Your personal vault{" "}
+                Your personal local vault{" "}
               </span>
               <span className="block whitespace-nowrap" style={{ color: "#e15821" }}>
                 for everything important
@@ -531,7 +531,9 @@ export default function Landing() {
             <div className="flex flex-col items-start justify-between gap-10 sm:flex-row sm:items-center">
               <div className="max-w-md">
                 <h2 className="font-display text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
-                  Take SafePlus with you,<br />wherever you go
+                  Take SafePlus with you,
+                  <br />
+                  wherever you go
                 </h2>
                 <p className="mt-4 text-base text-muted-foreground leading-relaxed">
                   Your cards, documents, and passwords stay secure and instantly accessible on iOS and Android.
@@ -539,13 +541,23 @@ export default function Landing() {
               </div>
               <div className="flex gap-6">
                 <div className="flex flex-col items-center gap-3">
-                  <img src={frameIos.url} alt="Scan to download SafePlus on the App Store" className="h-[250px] w-[250px] object-contain" loading="lazy" />
+                  <img
+                    src={frameIos.url}
+                    alt="Scan to download SafePlus on the App Store"
+                    className="h-[250px] w-[250px] object-contain"
+                    loading="lazy"
+                  />
                   <a href="#" aria-label="Download on the App Store" className="-mt-12">
                     <img src={appStoreBadge} alt="Download on the App Store" className="h-10" />
                   </a>
                 </div>
                 <div className="flex flex-col items-center gap-3">
-                  <img src={frameAndroid.url} alt="Scan to get SafePlus on Google Play" className="h-[250px] w-[250px] object-contain" loading="lazy" />
+                  <img
+                    src={frameAndroid.url}
+                    alt="Scan to get SafePlus on Google Play"
+                    className="h-[250px] w-[250px] object-contain"
+                    loading="lazy"
+                  />
                   <a href="#" aria-label="Get it on Google Play" className="-mt-12">
                     <img src={googlePlayBadge} alt="Get it on Google Play" className="h-10" />
                   </a>
@@ -555,7 +567,6 @@ export default function Landing() {
           </div>
         </div>
       </section>
-
 
       {/* CTA — commented out
       <section className="relative overflow-hidden py-24">
