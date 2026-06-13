@@ -307,10 +307,10 @@ export default function Landing() {
       <section id="features" className="bg-white py-24">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-center font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
-            Scan once, copy anytime.
+            Scan once, copy anytime
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-muted-foreground">
-            SafePlus reads every card and document into labeled fields. Card numbers, CVVs, license and passport numbers. Each one ready to copy in a tap.
+            Cards and documents are automatically organized into labeled fields. Card numbers, CVVs, license and passport numbers are ready to copy with a tap.
           </p>
           <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
