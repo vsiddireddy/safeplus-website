@@ -145,14 +145,17 @@ export default function Landing() {
               Blog
             </a>
           </div>
-          {/* <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm" onClick={() => navigate("/login")}>
-              Sign in
+          <div className="flex items-center gap-3">
+            <Button
+              size="sm"
+              className="rounded-full bg-foreground px-4 text-background hover:bg-foreground/90"
+              onClick={() => {
+                document.getElementById("get-the-app")?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Get the app
             </Button>
-            <Button size="sm" onClick={() => navigate("/signup")}>
-              Get started
-            </Button>
-          </div> */}
+          </div>
         </div>
       </nav>
 
@@ -536,7 +539,7 @@ export default function Landing() {
       </section>
 
       {/* Download app */}
-      <section className="bg-white pb-24">
+      <section id="get-the-app" className="bg-white pb-24 scroll-mt-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto w-[75%] rounded-3xl bg-muted/60 p-8 sm:p-12">
             <div className="flex flex-col items-start justify-between gap-10 sm:flex-row sm:items-center">
