@@ -471,11 +471,11 @@ export default function Landing() {
             <div className="mt-10 grid grid-cols-2 auto-rows-fr gap-4 sm:grid-cols-3">
               {[
                 { name: "TSA PreCheck / Known Traveler Number", icon: Plane, color: "#f48e39" },
-                { name: "Wi-Fi passwords", icon: Wifi, color: "#f48e39" },
-                { name: "Recovery codes", icon: Shield, color: "#f48e39" },
-                { name: "Safe combinations", icon: Lock, color: "#e15821" },
-                { name: "Gate & door codes", icon: KeyRound, color: "#e15821" },
-                { name: "Apartment / building codes", icon: Home, color: "#e15821" },
+                { name: "Wi-Fi Passwords", icon: Wifi, color: "#f48e39" },
+                { name: "Recovery Codes", icon: Shield, color: "#f48e39" },
+                { name: "Safe Combinations", icon: Lock, color: "#e15821" },
+                { name: "Gate & Door Codes", icon: KeyRound, color: "#e15821" },
+                { name: "Apartment & Building Codes", icon: Home, color: "#e15821" },
               ].map(({ name, icon: Icon, color }) => (
                 <div
                   key={name}
