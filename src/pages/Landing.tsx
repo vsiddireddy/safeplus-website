@@ -413,6 +413,37 @@ export default function Landing() {
         </div>
       </section>
 
+      {/* Passwords */}
+      <section className="bg-white py-24">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
+              Your local password manager
+            </h2>
+            <p className="mt-6 text-lg text-muted-foreground">
+              Save each login with its username, password, and website. Then search, favorite, and sort to pull up any one in seconds. Encrypted on your device, your passwords never leave your phone.
+            </p>
+          </div>
+          <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
+            <div className="grid items-center gap-4 md:grid-cols-[2fr_3fr]">
+              <div className="px-8 py-12 sm:px-14 md:py-24 md:px-10">
+                <h3 className="max-w-[560px] font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+                  Keep every login secure and instantly searchable.
+                </h3>
+              </div>
+              <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
+                <img
+                  src={appPasswords}
+                  alt="SafePlus passwords screen"
+                  className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-10 md:translate-x-0 md:w-[320px]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How it works */}
       <section id="security" className="bg-muted/50 py-24">
         <div className="mx-auto max-w-6xl px-6">
