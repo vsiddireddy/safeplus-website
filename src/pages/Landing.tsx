@@ -428,7 +428,7 @@ export default function Landing() {
           <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[2fr_3fr]">
               <div className="px-8 py-12 sm:px-14 md:py-24 md:px-10">
-                <h3 className="max-w-[560px] font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+                <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   Store each login with its corresponding username, password, and website, along with optional notes for
                   additional details.
                 </h3>
