@@ -466,7 +466,7 @@ export default function Landing() {
           {/* And it's not just passwords */}
           <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] px-8 py-12 sm:px-14 sm:py-14">
             <h3 className="text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
-              And it&apos;s not just passwords
+              Store more than just passwords.
             </h3>
             <div className="mt-10 grid grid-cols-2 auto-rows-fr gap-4 sm:grid-cols-3">
               {[
