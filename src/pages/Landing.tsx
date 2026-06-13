@@ -367,7 +367,7 @@ export default function Landing() {
                   <img
                     src={pushPassportReminder.url}
                     alt="Passport expiry push notification"
-                    className="absolute left-1/2 top-4 w-[92%] -translate-x-1/2 drop-shadow-xl"
+                    className="absolute left-1/2 -top-6 w-[92%] -translate-x-1/2 drop-shadow-xl"
                     loading="lazy"
                   />
                 </div>
