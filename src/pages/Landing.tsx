@@ -25,7 +25,6 @@ import {
   Plane,
   Globe2,
   Home,
-  Tag,
   Landmark,
   KeyRound,
   Lock,
@@ -40,6 +39,7 @@ import appCard from "@/assets/app-card.png";
 import appIdDetail from "@/assets/app-id-detail.png.asset.json";
 import appGiftcard from "@/assets/app-giftcard.png.asset.json";
 import appPasswordDetail from "@/assets/app-password-detail.png.asset.json";
+import pushPassportReminder from "@/assets/push-passport-reminder.png.asset.json";
 import appCardDetail from "@/assets/app-card-detail.png.asset.json";
 import appLocked from "@/assets/app-locked.png.asset.json";
 import frameIos from "@/assets/frame-ios.png.asset.json";
@@ -308,8 +308,11 @@ export default function Landing() {
       <section id="features" className="bg-white py-24">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-center font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
-            Never dig for an ID, card, or password again
+            Scan once, copy anytime
           </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-muted-foreground">
+            Cards and documents are automatically organized into labeled fields. Card numbers, CVVs, license and passport numbers are ready to copy with a tap.
+          </p>
           <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
               <div className="px-8 py-12 sm:px-14 md:py-24 md:px-10">
@@ -334,8 +337,7 @@ export default function Landing() {
             <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3]">
               <div className="flex flex-col items-start px-8 pt-12 sm:px-10 sm:pt-14">
                 <h3 className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
-                  Secure card details, ready to copy.
-                  <br />
+                  View and copy details like card number and CVV.
                 </h3>
                 <div className="mt-8 w-full max-w-[360px] self-center overflow-hidden aspect-[2/3]">
                   <img
@@ -352,13 +354,19 @@ export default function Landing() {
             <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3]">
               <div className="flex flex-col items-start px-8 pt-12 sm:px-10 sm:pt-14">
                 <h3 className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
-                  Never lose track of a password again.
+                  Get alerted before a card or document expires.
                 </h3>
-                <div className="mt-8 w-full max-w-[360px] self-center overflow-hidden aspect-[2/3]">
+                <div className="relative mt-8 w-full max-w-[360px] self-center aspect-[2/3]">
                   <img
                     src={appPasswordDetail.url}
                     alt="SafePlus password detail screen"
                     className="block w-full h-auto"
+                    loading="lazy"
+                  />
+                  <img
+                    src={pushPassportReminder.url}
+                    alt="Passport expiry push notification"
+                    className="absolute left-1/2 -top-6 w-[92%] -translate-x-1/2 drop-shadow-xl"
                     loading="lazy"
                   />
                 </div>
@@ -369,7 +377,7 @@ export default function Landing() {
           {/* Third row - all other items */}
           <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] px-8 py-12 sm:px-14 sm:py-14">
             <h3 className="text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
-              No card or document left behind.
+              And so much more.
             </h3>
             <div className="mt-10 grid grid-cols-2 auto-rows-fr gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
               {[
@@ -380,7 +388,7 @@ export default function Landing() {
                 { name: "Vehicle Registration", icon: Car, color: "#f48e39" },
                 { name: "Health Documents", icon: HeartPulse, color: "#e15821" },
                 { name: "Boarding Passes", icon: Plane, color: "#e15821" },
-                { name: "Coupons", icon: Tag, color: "#e15821" },
+                { name: "Known Travel Number", icon: Globe2, color: "#e15821" },
                 { name: "Lease & Rental Documents", icon: Home, color: "#e15821" },
                 { name: "Mortgage Documents", icon: Landmark, color: "#e15821" },
               ].map(({ name, icon: Icon, color }) => (
