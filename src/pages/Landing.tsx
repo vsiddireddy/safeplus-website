@@ -313,7 +313,7 @@ export default function Landing() {
             <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
               <div className="px-8 py-12 sm:px-14 md:py-24 md:px-10">
                 <h3 className="max-w-[560px] font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
-                  Keep your license, passport, and IDs ready the moment you need them.
+                  Keep your driver's license, passport, and IDs ready the moment you need them.
                 </h3>
               </div>
               <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
