@@ -414,7 +414,7 @@ export default function Landing() {
       </section>
 
       {/* Passwords */}
-      <section className="bg-white py-24">
+      <section className="bg-white pt-12 pb-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
