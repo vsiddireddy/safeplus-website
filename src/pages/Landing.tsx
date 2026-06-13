@@ -40,6 +40,7 @@ import appCard from "@/assets/app-card.png";
 import appIdDetail from "@/assets/app-id-detail.png.asset.json";
 import appGiftcard from "@/assets/app-giftcard.png.asset.json";
 import appPasswordDetail from "@/assets/app-password-detail.png.asset.json";
+import appPasswordGoogle from "@/assets/app-password-google.png.asset.json";
 import pushPassportReminder from "@/assets/push-passport-reminder.png.asset.json";
 import appCardDetail from "@/assets/app-card-detail.png.asset.json";
 import appLocked from "@/assets/app-locked.png.asset.json";
@@ -433,8 +434,8 @@ export default function Landing() {
               </div>
               <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
                 <img
-                  src={appPasswordDetail.url}
-                  alt="SafePlus password detail screen"
+                  src={appPasswordGoogle.url}
+                  alt="SafePlus Google password detail screen"
                   className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-10 md:translate-x-0 md:w-[320px]"
                   loading="lazy"
                 />
