@@ -38,7 +38,7 @@ import appPasswords from "@/assets/app-passwords.png";
 import appCard from "@/assets/app-card.png";
 import appIdDetail from "@/assets/app-id-detail.png.asset.json";
 import appGiftcard from "@/assets/app-giftcard.png.asset.json";
-import appPasswordDetail from "@/assets/app-password-detail.png.asset.json";
+import appPasswordDetail from "@/assets/app-id-passport-detail.png.asset.json";
 import appCardDetail from "@/assets/app-card-detail.png.asset.json";
 import appLocked from "@/assets/app-locked.png.asset.json";
 import frameIos from "@/assets/frame-ios.png.asset.json";
