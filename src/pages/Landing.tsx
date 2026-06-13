@@ -307,7 +307,7 @@ export default function Landing() {
       <section id="features" className="bg-white py-24">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-center font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
-            One scan, unlimited access
+            Never dig for an ID, card, or password again
           </h2>
           <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
