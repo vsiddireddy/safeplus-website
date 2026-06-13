@@ -479,7 +479,7 @@ export default function Landing() {
               ].map(({ name, icon: Icon, color }) => (
                 <div
                   key={name}
-                  className="flex h-full flex-col items-center gap-6 rounded-2xl px-4 py-5 text-center shadow-sm transition-transform hover:scale-[1.02]"
+                  className="flex h-full flex-col items-center gap-3 rounded-2xl px-4 py-5 text-center shadow-sm transition-transform hover:scale-[1.02]"
                   style={{ backgroundColor: color }}
                 >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20">
