@@ -357,11 +357,17 @@ export default function Landing() {
                 <h3 className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   Never lose track of a password again.
                 </h3>
-                <div className="mt-8 w-full max-w-[360px] self-center overflow-hidden aspect-[2/3]">
+                <div className="relative mt-8 w-full max-w-[360px] self-center aspect-[2/3]">
                   <img
                     src={appPasswordDetail.url}
                     alt="SafePlus password detail screen"
                     className="block w-full h-auto"
+                    loading="lazy"
+                  />
+                  <img
+                    src={pushPassportReminder.url}
+                    alt="Passport expiry push notification"
+                    className="absolute left-1/2 top-4 w-[92%] -translate-x-1/2 drop-shadow-xl"
                     loading="lazy"
                   />
                 </div>
