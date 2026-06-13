@@ -443,6 +443,26 @@ export default function Landing() {
               </div>
             </div>
           </div>
+
+          {/* Reversed layout */}
+          <div className="relative mx-auto mt-6 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
+            <div className="grid items-center gap-4 md:grid-cols-[2fr_3fr]">
+              <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
+                <img
+                  src={appPasswords}
+                  alt="SafePlus passwords screen"
+                  className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-10 md:translate-x-0 md:w-[320px]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="px-8 py-12 sm:px-14 md:py-24 md:px-14">
+                <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+                  Store each login with its corresponding username, password, and website, along with optional notes for
+                  additional details.
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
