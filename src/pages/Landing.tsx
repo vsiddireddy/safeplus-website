@@ -457,8 +457,7 @@ export default function Landing() {
               </div>
               <div className="px-8 py-12 sm:px-14 md:py-24 md:px-14">
                 <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
-                  Store each login with its corresponding username, password, and website, along with optional notes for
-                  additional details.
+                  Search, favorite, and pull up any password in seconds. Your passwords never leave your phone.
                 </h3>
               </div>
             </div>
