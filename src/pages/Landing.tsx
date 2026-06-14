@@ -240,7 +240,7 @@ export default function Landing() {
             </div> */}
 
             <p className="mx-auto mt-10 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-              Store IDs, cards, documents, passwords, and more all securely on your device. Private by design. Your data
+              Store IDs, cards, documents, and passwords securely on your device. Private by design. Your data
               never leaves your phone.
             </p>
 
