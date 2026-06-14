@@ -145,9 +145,9 @@ export default function Landing() {
             <a href="#faq" className="hover:text-primary transition-colors">
               FAQ
             </a>
-            <a href="#blog" className="hover:text-primary transition-colors">
+            {/* <a href="#blog" className="hover:text-primary transition-colors">
               Blog
-            </a>
+            </a> */}
           </div>
           <div className="flex items-center gap-3">
             <Button
