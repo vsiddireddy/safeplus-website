@@ -582,7 +582,7 @@ export default function Landing() {
               },
               {
                 q: "How is my data protected?",
-                a: "Your data never leaves your device. So only you can see your data. Additionally, SafePlus has on-device encryption for each card, document, and password.",
+                a: "Everything you store in SafePlus stays on your device and is encrypted with AES-256. The same standard is trusted to protect classified government data. Nothing is ever uploaded to a server or the cloud, and SafePlus doesn't require an account or email, so there's no copy of your information living anywhere but on your phone. Not even we can see it.",
               },
               {
                 q: "Will SafePlus send me reminders before my cards and documents expire?",
