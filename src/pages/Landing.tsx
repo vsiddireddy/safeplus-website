@@ -316,7 +316,7 @@ export default function Landing() {
       <section id="features" className="bg-white py-24">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-center font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
-            Scan once, copy anytime
+            Scan once, view & copy anytime
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-muted-foreground">
             Cards and documents are automatically organized into labeled fields. Card numbers, CVVs, license and
