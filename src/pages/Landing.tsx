@@ -578,7 +578,7 @@ export default function Landing() {
               },
               {
                 q: "What devices does SafePlus support?",
-                a: "SafePlus supports iPhone, iPad, Android phones, and Android tablets, allowing you to securely access your information across your preferred mobile devices.",
+                a: "SafePlus supports iPhone, iPad, Android phones, and Android tablets. SafePlus is available to download for free on the App Store and Google Play Store.",
               },
               {
                 q: "How is my data protected?",
