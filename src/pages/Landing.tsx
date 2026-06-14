@@ -39,16 +39,16 @@ import appStoreBadge from "@/assets/app-store-badge.svg";
 import googlePlayBadge from "@/assets/google-play-badge.svg";
 import appHome from "@/assets/app-home.png";
 import appPasswords from "@/assets/app-passwords.png";
-import appPasswordGoogle from "@/assets/app-password-google.png.asset.json";
+import appPasswordGoogle from "@/assets/app-password-google.png";
 import appCard from "@/assets/app-card.png";
-import appIdDetail from "@/assets/app-id-detail.png.asset.json";
-import appGiftcard from "@/assets/app-giftcard.png.asset.json";
-import appPasswordDetail from "@/assets/app-password-detail.png.asset.json";
-import pushPassportReminder from "@/assets/push-passport-reminder.png.asset.json";
-import appCardDetail from "@/assets/app-card-detail.png.asset.json";
-import appLocked from "@/assets/app-locked.png.asset.json";
-import frameIos from "@/assets/frame-ios.png.asset.json";
-import frameAndroid from "@/assets/frame-android.png.asset.json";
+import appIdDetail from "@/assets/app-id-detail.png";
+import appGiftcard from "@/assets/app-giftcard.png";
+import appPasswordDetail from "@/assets/app-password-detail.png";
+import pushPassportReminder from "@/assets/push-passport-reminder.png";
+import appCardDetail from "@/assets/app-card-detail.png";
+import appLocked from "@/assets/app-locked.png";
+import frameIos from "@/assets/frame-ios.png";
+import frameAndroid from "@/assets/frame-android.png";
 
 const features = [
   {
@@ -330,7 +330,7 @@ export default function Landing() {
               </div>
               <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
                 <img
-                  src={appIdDetail.url}
+                  src={appIdDetail}
                   alt="SafePlus ID detail screen"
                   className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-10 md:translate-x-0 md:w-[320px]"
                   loading="lazy"
@@ -349,7 +349,7 @@ export default function Landing() {
                 </h3>
                 <div className="mt-8 w-full max-w-[360px] self-center aspect-[2/3]">
                   <img
-                    src={appCardDetail.url}
+                    src={appCardDetail}
                     alt="SafePlus card detail screen"
                     className="block w-full h-auto"
                     loading="lazy"
@@ -366,13 +366,13 @@ export default function Landing() {
                 </h3>
                 <div className="relative mt-8 w-full max-w-[360px] self-center aspect-[2/3]">
                   <img
-                    src={appPasswordDetail.url}
+                    src={appPasswordDetail}
                     alt="SafePlus password detail screen"
                     className="block w-full h-auto"
                     loading="lazy"
                   />
                   <img
-                    src={pushPassportReminder.url}
+                    src={pushPassportReminder}
                     alt="Passport expiry push notification"
                     className="absolute left-1/2 -top-6 w-[92%] -translate-x-1/2 drop-shadow-xl"
                     loading="lazy"
@@ -434,7 +434,7 @@ export default function Landing() {
               </div>
               <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
                 <img
-                  src={appPasswordGoogle.url}
+                  src={appPasswordGoogle}
                   alt="SafePlus Google password detail screen"
                   className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-10 md:translate-x-0 md:w-[320px]"
                   loading="lazy"
@@ -530,7 +530,7 @@ export default function Landing() {
             <div className="grid items-center gap-4 sm:grid-cols-2">
               <div className="relative h-[330px] sm:h-[400px] overflow-hidden flex justify-end pr-2 sm:pr-0">
                 <img
-                  src={appLocked.url}
+                  src={appLocked}
                   alt="SafePlus app locked screen"
                   className="absolute top-12 right-2 sm:right-0 w-[185px] sm:w-[218px] max-w-none"
                   loading="lazy"
@@ -635,7 +635,7 @@ export default function Landing() {
               <div className="flex gap-6">
                 <div className="flex flex-col items-center gap-3">
                   <img
-                    src={frameIos.url}
+                    src={frameIos}
                     alt="Scan to download SafePlus on the App Store"
                     className="h-[250px] w-[250px] object-contain"
                     loading="lazy"
@@ -646,7 +646,7 @@ export default function Landing() {
                 </div>
                 <div className="flex flex-col items-center gap-3">
                   <img
-                    src={frameAndroid.url}
+                    src={frameAndroid}
                     alt="Scan to get SafePlus on Google Play"
                     className="h-[250px] w-[250px] object-contain"
                     loading="lazy"
