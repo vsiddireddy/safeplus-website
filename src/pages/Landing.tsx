@@ -319,8 +319,7 @@ export default function Landing() {
             Scan once, view & copy anytime
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-muted-foreground">
-            Cards and documents are automatically organized into labeled fields. Card numbers, CVVs, license and
-            passport numbers are ready to copy with a tap.
+            Cards and documents are automatically organized into labeled fields. Key details are always ready to view and copy with a tap.
           </p>
           <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
