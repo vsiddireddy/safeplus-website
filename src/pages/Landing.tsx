@@ -590,7 +590,7 @@ export default function Landing() {
               },
               {
                 q: "What type of data can I store?",
-                a: "You can store driver's licenses, IDs, passports, credit & debit cards, loyalty & membership cards, receipts, boarding passes, and much more. Essentially, any card or document can be scanned and stored in SafePlus.",
+                a: "You can store driver's licenses, IDs, passports, credit & debit cards, loyalty & membership cards, receipts, boarding passes, and more. Essentially, any card or document can be scanned and stored in SafePlus.",
               },
               {
                 q: "What is the difference between SafePlus and other wallet apps?",
