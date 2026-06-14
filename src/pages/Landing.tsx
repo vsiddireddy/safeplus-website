@@ -594,7 +594,7 @@ export default function Landing() {
               },
               {
                 q: "What is the difference between SafePlus and other wallet apps?",
-                a: "SafePlus combines secure storage for cards, documents, and passwords in one app. Unlike many wallet apps, SafePlus stores your data locally on your device, requires no account, has no subscriptions, no paywalls, and no ads.",
+                a: "Most wallet apps sync your data to the cloud and focus mainly on payment cards and passes. SafePlus is different on both fronts. It stores everything, including cards, IDs, documents, and passwords. Each one is encrypted on your device, with no account and no cloud, so there's no copy of your data anywhere but your phone. It's also smarter; SafePlus scans your cards and documents to display key fields automatically. The app is also completely free. No subscriptions, paywalls, or ads.",
               },
               /*
               {
