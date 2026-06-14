@@ -586,7 +586,7 @@ export default function Landing() {
               },
               {
                 q: "Will SafePlus send me reminders before my cards and documents expire?",
-                a: "Yes. SafePlus sends reminders before your cards and documents expire.",
+                a: "Yes. When you scan or add a card or document, SafePlus automatically reads its expiration date. You can also manually configure when you want to receive a push notification to remind you.",
               },
               {
                 q: "What type of data can I store?",
