@@ -347,7 +347,7 @@ export default function Landing() {
                 <h3 className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   View and copy details like card number and CVV.
                 </h3>
-                <div className="mt-8 w-full max-w-[360px] self-center overflow-hidden aspect-[2/3]">
+                <div className="mt-8 w-full max-w-[360px] self-center aspect-[2/3]">
                   <img
                     src={appCardDetail.url}
                     alt="SafePlus card detail screen"
