@@ -497,7 +497,7 @@ export default function Landing() {
       <section id="security" className="bg-muted/50 py-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-[620px] text-center">
-            <h2 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+            <h2 className="font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
               Download with Confidence
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
