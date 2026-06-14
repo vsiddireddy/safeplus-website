@@ -573,12 +573,12 @@ export default function Landing() {
           <Accordion type="single" collapsible defaultValue="item-0" className="mt-10 w-full">
             {[
               {
-                q: "What devices does SafePlus support?",
-                a: "SafePlus supports iPhone, iPad, Android phones, and Android tablets, allowing you to securely access your information across your preferred mobile devices.",
+                q: "Is SafePlus free?",
+                a: "Yes. SafePlus is completely free to use with no restrictions on storing cards, documents, and passwords. There are no subscriptions, paywalls, or ads.",
               },
               {
-                q: "Is SafePlus free?",
-                a: "Yes. SafePlus is completely free to use with unlimited access to store cards, documents, and passwords. There are no subscriptions, no paywalls, and no ads.",
+                q: "What devices does SafePlus support?",
+                a: "SafePlus supports iPhone, iPad, Android phones, and Android tablets, allowing you to securely access your information across your preferred mobile devices.",
               },
               {
                 q: "How is my data protected?",
