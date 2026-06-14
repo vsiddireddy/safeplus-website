@@ -29,6 +29,9 @@ import {
   KeyRound,
   Lock,
   Ticket,
+  Wifi,
+  Shield,
+
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
@@ -36,6 +39,7 @@ import appStoreBadge from "@/assets/app-store-badge.svg";
 import googlePlayBadge from "@/assets/google-play-badge.svg";
 import appHome from "@/assets/app-home.png";
 import appPasswords from "@/assets/app-passwords.png";
+import appPasswordGoogle from "@/assets/app-password-google.png.asset.json";
 import appCard from "@/assets/app-card.png";
 import appIdDetail from "@/assets/app-id-detail.png.asset.json";
 import appGiftcard from "@/assets/app-giftcard.png.asset.json";
@@ -420,27 +424,70 @@ export default function Landing() {
             <h2 className="font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
               Your local password manager
             </h2>
-            <p className="mt-6 text-lg text-muted-foreground">
-              Save each login with its username, password, and website. Then search, favorite, and sort to pull up any
-              one in seconds. Encrypted on your device, your passwords never leave your phone.
-            </p>
           </div>
           <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
-            <div className="grid items-center gap-4 md:grid-cols-[2fr_3fr]">
-              <div className="px-8 py-12 sm:px-14 md:py-24 md:px-10">
-                <h3 className="max-w-[560px] font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+            <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
+              <div className="px-8 py-12 sm:px-14 md:py-24 md:px-14">
+                <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   Store each login with its corresponding username, password, and website, along with optional notes for
                   additional details.
                 </h3>
               </div>
               <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
                 <img
-                  src={appPasswords}
-                  alt="SafePlus passwords screen"
+                  src={appPasswordGoogle.url}
+                  alt="SafePlus Google password detail screen"
                   className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-10 md:translate-x-0 md:w-[320px]"
                   loading="lazy"
                 />
               </div>
+            </div>
+          </div>
+
+          {/* Reversed layout */}
+          <div className="relative mx-auto mt-6 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
+            <div className="grid items-center gap-4 md:grid-cols-[2fr_3fr]">
+              <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
+                <img
+                  src={appPasswords}
+                  alt="SafePlus passwords screen"
+                  className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-10 md:translate-x-0 md:w-[320px]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="px-8 py-12 sm:px-14 md:py-24 md:px-14">
+                <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+                  Search, favorite, and pull up any password in seconds. Your passwords never leave your phone.
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          {/* And it's not just passwords */}
+          <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] px-8 py-12 sm:px-14 sm:py-14">
+            <h3 className="text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+              Store more than just passwords.
+            </h3>
+            <div className="mt-10 grid grid-cols-2 auto-rows-fr gap-4 sm:grid-cols-3">
+              {[
+                { name: "TSA PreCheck / Known Traveler Number", icon: Plane, color: "#f48e39" },
+                { name: "Wi-Fi Passwords", icon: Wifi, color: "#f48e39" },
+                { name: "Recovery Codes", icon: Shield, color: "#f48e39" },
+                { name: "Safe Combinations", icon: Lock, color: "#e15821" },
+                { name: "Gate & Door Codes", icon: KeyRound, color: "#e15821" },
+                { name: "Apartment & Building Codes", icon: Home, color: "#e15821" },
+              ].map(({ name, icon: Icon, color }) => (
+                <div
+                  key={name}
+                  className="flex h-full flex-col items-center gap-3 rounded-2xl px-4 py-5 text-center shadow-sm transition-transform hover:scale-[1.02]"
+                  style={{ backgroundColor: color }}
+                >
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20">
+                    <Icon className="h-5 w-5 text-white" strokeWidth={2} />
+                  </div>
+                  <span className="font-display text-sm font-semibold leading-snug text-white">{name}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -526,28 +573,28 @@ export default function Landing() {
           <Accordion type="single" collapsible defaultValue="item-0" className="mt-10 w-full">
             {[
               {
-                q: "Is SafePlus free?",
-                a: "Yes. SafePlus is completely free to use with no restrictions on storing cards, documents, and passwords. There are no subscriptions, no paywalls, and no ads.",
+                q: "What devices does SafePlus support?",
+                a: "SafePlus supports iPhone, iPad, Android phones, and Android tablets, allowing you to securely access your information across your preferred mobile devices.",
               },
               {
-                q: "What devices does SafePlus support?",
-                a: "SafePlus supports iPhone, iPad, Android phones, and Android tablets. SafePlus is available to download for free on the App Store and Play Store",
+                q: "Is SafePlus free?",
+                a: "Yes. SafePlus is completely free to use with unlimited access to store cards, documents, and passwords. There are no subscriptions, no paywalls, and no ads.",
               },
               {
                 q: "How is my data protected?",
-                a: "Everything you store in SafePlus stays on your device and is encrypted with AES-256. The same standard trusted to protect classified government data. Nothing is ever uploaded to a server or the cloud, and SafePlus doesn't require an account or email, so there's no copy of your information living anywhere but on your phone. Not even we can see it.",
+                a: "Your data never leaves your device. So only you can see your data. Additionally, SafePlus has on-device encryption for each card, document, and password.",
               },
               {
                 q: "Will SafePlus send me reminders before my cards and documents expire?",
-                a: "Yes. When you scan or add a card or document, SafePlus automatically reads its expiration date. You can also manually configure when you want to receive a push notification to remind you.",
+                a: "Yes. SafePlus sends reminders before your cards and documents expire.",
               },
               {
                 q: "What type of data can I store?",
-                a: "You can store driver's licenses, IDs, passports, credit & debit cards, loyalty & membership cards, receipts, boarding passes, and more. Essentially, any card or document can be scanned and stored in SafePlus.",
+                a: "You can store driver's licenses, IDs, passports, credit & debit cards, loyalty & membership cards, receipts, boarding passes, and much more. Essentially, any card or document can be scanned and stored in SafePlus.",
               },
               {
                 q: "What is the difference between SafePlus and other wallet apps?",
-                a: "Most wallet apps sync your data to the cloud and focus mainly on payment cards and passes. SafePlus is different on both fronts. It stores everything, including cards, IDs, documents, and passwords. Each one is encrypted on your device, with no account and no cloud, so there's no copy of your data anywhere but your phone. It's also smarter; SafePlus scans your cards and documents to display key fields automatically. The app is also completely free. No subscriptions, paywalls, or ads.",
+                a: "SafePlus combines secure storage for cards, documents, and passwords in one app. Unlike many wallet apps, SafePlus stores your data locally on your device, requires no account, has no subscriptions, no paywalls, and no ads.",
               },
               /*
               {
