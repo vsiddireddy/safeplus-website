@@ -255,7 +255,7 @@ export default function Landing() {
                 <img src={appStoreBadge} alt="Download on the App Store" className="h-[53px] w-auto" />
               </a>
               <a
-                href="https://play.google.com/store/apps/details?id=com.mobile.safeplus"
+                href="https://play.google.com/store/apps/details?id=com.mobile.safeplus&pcampaignid=web_share"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Get it on Google Play"
@@ -655,7 +655,7 @@ export default function Landing() {
                     className="h-[250px] w-[250px] object-contain"
                     loading="lazy"
                   />
-                  <a href="https://play.google.com/store/apps/details?id=com.mobile.safeplus" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play" className="-mt-12">
+                  <a href="https://play.google.com/store/apps/details?id=com.mobile.safeplus&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play" className="-mt-12">
                     <img src={googlePlayBadge} alt="Get it on Google Play" className="h-10" />
                   </a>
                 </div>
