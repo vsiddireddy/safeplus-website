@@ -400,7 +400,7 @@ export default function Landing() {
                 { name: "Vehicle Registration", icon: Car, color: "#f48e39" },
                 { name: "Health Documents", icon: HeartPulse, color: "#e15821" },
                 { name: "Boarding Passes", icon: Plane, color: "#e15821" },
-                { name: "Coupons", icon: Ticket, color: "#e15821" },
+                { name: "Coupons & Tickets", icon: Ticket, color: "#e15821" },
                 { name: "Lease & Rental Documents", icon: Home, color: "#e15821" },
                 { name: "Mortgage Documents", icon: Landmark, color: "#e15821" },
               ].map(({ name, icon: Icon, color }) => (
