@@ -131,10 +131,10 @@ export default function Landing() {
       {/* Nav */}
       <nav className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-lg">
         <div className="relative mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <img src={logo} alt="SafePlus logo" className="h-8 w-8 rounded-lg object-cover" />
             <span className="font-display text-lg font-bold text-foreground">SafePlus</span>
-          </div>
+          </Link>
           <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-6 text-sm font-medium text-foreground">
             <a href="#features" className="hover:text-primary transition-colors">
               Features
