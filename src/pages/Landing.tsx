@@ -246,14 +246,18 @@ export default function Landing() {
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <a
-                href="#"
+                href="https://apps.apple.com/us/app/safeplus-local-vault/id1561590563"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Download on the App Store"
                 className="inline-block transition-transform hover:scale-105"
               >
                 <img src={appStoreBadge} alt="Download on the App Store" className="h-[53px] w-auto" />
               </a>
               <a
-                href="#"
+                href="https://play.google.com/store/apps/details?id=com.mobile.safeplus"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Get it on Google Play"
                 className="inline-block transition-transform hover:scale-105"
               >
@@ -640,7 +644,7 @@ export default function Landing() {
                     className="h-[250px] w-[250px] object-contain"
                     loading="lazy"
                   />
-                  <a href="#" aria-label="Download on the App Store" className="-mt-12">
+                  <a href="https://apps.apple.com/us/app/safeplus-local-vault/id1561590563" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" className="-mt-12">
                     <img src={appStoreBadge} alt="Download on the App Store" className="h-10" />
                   </a>
                 </div>
@@ -651,7 +655,7 @@ export default function Landing() {
                     className="h-[250px] w-[250px] object-contain"
                     loading="lazy"
                   />
-                  <a href="#" aria-label="Get it on Google Play" className="-mt-12">
+                  <a href="https://play.google.com/store/apps/details?id=com.mobile.safeplus" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play" className="-mt-12">
                     <img src={googlePlayBadge} alt="Get it on Google Play" className="h-10" />
                   </a>
                 </div>
