@@ -51,6 +51,8 @@ import frameIos from "@/assets/frame-ios.png";
 import frameAndroid from "@/assets/frame-android.png";
 import heroLeftDark from "@/assets/hero-left-dark.webp";
 import heroLeftLight from "@/assets/hero-left-light.webp";
+import heroRightDark from "@/assets/hero-right-dark.webp";
+import heroRightLight from "@/assets/hero-right-light.webp";
 
 const features = [
   {
@@ -135,7 +137,7 @@ export default function Landing() {
   }, [isDark]);
 
   useEffect(() => {
-    [heroLeftDark, heroLeftLight].forEach((src) => {
+    [heroLeftDark, heroLeftLight, heroRightDark, heroRightLight].forEach((src) => {
       const img = new Image();
       img.src = src;
     });
@@ -309,8 +311,8 @@ export default function Landing() {
               loading="eager"
             />
             <img
-              src={appPasswords}
-              alt="SafePlus passwords screen"
+              src={isDark ? heroRightLight : heroRightDark}
+              alt="SafePlus password detail"
               className="relative z-10 w-[44%] max-w-[380px] -ml-[10%] mb-10 rotate-[10deg] drop-shadow-2xl"
               loading="lazy"
             />
