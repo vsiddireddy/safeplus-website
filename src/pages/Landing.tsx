@@ -122,6 +122,18 @@ export default function Landing() {
   const { user, loading } = useAuth();
   const navigate = useNavigate();
 
+  const [isDark, setIsDark] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    const stored = window.localStorage.getItem("theme");
+    if (stored) return stored === "dark";
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", isDark);
+    window.localStorage.setItem("theme", isDark ? "dark" : "light");
+  }, [isDark]);
+
   useEffect(() => {
     if (!loading && user) navigate("/dashboard", { replace: true });
   }, [user, loading, navigate]);
