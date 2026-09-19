@@ -470,8 +470,8 @@ export default function Landing() {
               </div>
               <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
                 <img
-                  src={appPasswordGoogle}
-                  alt="SafePlus Google password detail screen"
+                  src={isDark ? heroRightLight : heroRightDark}
+                  alt="SafePlus password detail screen"
                   className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-10 md:translate-x-0 md:w-[320px]"
                   loading="lazy"
                 />
