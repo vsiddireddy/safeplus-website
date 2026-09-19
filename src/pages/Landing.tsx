@@ -51,6 +51,8 @@ import frameIos from "@/assets/frame-ios.png";
 import frameAndroid from "@/assets/frame-android.png";
 import heroLeftDark from "@/assets/hero-left-dark.webp";
 import heroLeftLight from "@/assets/hero-left-light.webp";
+import heroMidDark from "@/assets/hero-mid-dark.webp";
+import heroMidLight from "@/assets/hero-mid-light.webp";
 import heroRightDark from "@/assets/hero-right-dark.webp";
 import heroRightLight from "@/assets/hero-right-light.webp";
 
