@@ -346,7 +346,7 @@ export default function Landing() {
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-muted-foreground">
             Cards and documents are automatically organized into labeled fields. Key details are always ready to view and copy with a tap.
           </p>
-          <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
+          <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
               <div className="px-8 py-12 sm:px-14 md:py-24 md:px-10">
                 <h3 className="max-w-[560px] font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
@@ -367,7 +367,7 @@ export default function Landing() {
           {/* Second row - two half-width cards */}
           <div className="mx-auto mt-6 grid w-[90%] gap-6 sm:w-[80.4%] md:grid-cols-2">
             {/* Left card - Card details */}
-            <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3]">
+            <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary">
               <div className="flex flex-col items-start px-8 pt-12 sm:px-10 sm:pt-14">
                 <h3 className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   View and copy details like card number and CVV.
@@ -384,7 +384,7 @@ export default function Landing() {
             </div>
 
             {/* Right card - Gift card alerts */}
-            <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3]">
+            <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary">
               <div className="flex flex-col items-start px-8 pt-12 sm:px-10 sm:pt-14">
                 <h3 className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   Get alerted before a card or document expires.
@@ -408,7 +408,7 @@ export default function Landing() {
           </div>
 
           {/* Third row - all other items */}
-          <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] px-8 py-12 sm:px-14 sm:py-14">
+          <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary px-8 py-12 sm:px-14 sm:py-14">
             <h3 className="text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
               No card or document left behind.
             </h3>
@@ -449,7 +449,7 @@ export default function Landing() {
               Your local password manager
             </h2>
           </div>
-          <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
+          <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
               <div className="px-8 py-12 sm:px-14 md:py-24 md:px-14">
                 <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
@@ -469,7 +469,7 @@ export default function Landing() {
           </div>
 
           {/* Reversed layout */}
-          <div className="relative mx-auto mt-6 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
+          <div className="relative mx-auto mt-6 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[2fr_3fr]">
               <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
                 <img
@@ -488,7 +488,7 @@ export default function Landing() {
           </div>
 
           {/* And it's not just passwords */}
-          <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] px-8 py-12 sm:px-14 sm:py-14">
+          <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary px-8 py-12 sm:px-14 sm:py-14">
             <h3 className="text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
               Store more than just passwords.
             </h3>
