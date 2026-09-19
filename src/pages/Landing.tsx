@@ -384,7 +384,7 @@ export default function Landing() {
                 </h3>
                 <div className="mt-8 w-full max-w-[360px] self-center aspect-[2/3]">
                   <img
-                    src={appCardDetail}
+                    src={isDark ? heroLeftLight : heroLeftDark}
                     alt="SafePlus card detail screen"
                     className="block w-full h-auto"
                     loading="lazy"
