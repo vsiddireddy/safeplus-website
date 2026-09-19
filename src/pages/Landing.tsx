@@ -55,6 +55,8 @@ import heroRightDark from "@/assets/hero-right-dark.webp";
 import heroRightLight from "@/assets/hero-right-light.webp";
 import passwordHomeDark from "@/assets/password-home-dark.webp";
 import passwordHomeLight from "@/assets/password-home-light.webp";
+import subDark from "@/assets/sub-dark.webp";
+import subLight from "@/assets/sub-light.webp";
 
 const features = [
   {
@@ -139,7 +141,7 @@ export default function Landing() {
   }, [isDark]);
 
   useEffect(() => {
-    [heroLeftDark, heroLeftLight, heroMidDark, heroMidLight, heroRightDark, heroRightLight, appIdDark, appIdLight, passportDark, passportLight, passwordHomeDark, passwordHomeLight].forEach((src) => {
+    [heroLeftDark, heroLeftLight, heroMidDark, heroMidLight, heroRightDark, heroRightLight, appIdDark, appIdLight, passportDark, passportLight, passwordHomeDark, passwordHomeLight, subDark, subLight].forEach((src) => {
       const img = new Image();
       img.src = src;
     });
@@ -523,6 +525,29 @@ export default function Landing() {
                   <span className="font-display text-sm font-semibold leading-snug text-white">{name}</span>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* More in the vault — Subscriptions */}
+          <h2 className="mx-auto mt-24 max-w-2xl text-center font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
+            There's more in the vault
+          </h2>
+
+          <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary sm:w-[80.4%]">
+            <div className="grid items-center gap-4 md:grid-cols-[2fr_3fr]">
+              <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
+                <img
+                  src={isDark ? subLight : subDark}
+                  alt="SafePlus subscriptions screen"
+                  className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-10 md:translate-x-0 md:w-[320px]"
+                  loading="lazy"
+                />
+              </div>
+              <div className="px-8 py-12 sm:px-14 md:py-24 md:px-14">
+                <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+                  Track renewal dates, total spend, and which card gets charged.
+                </h3>
+              </div>
             </div>
           </div>
         </div>
