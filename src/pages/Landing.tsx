@@ -44,7 +44,6 @@ import appCard from "@/assets/app-card.png";
 import appGiftcard from "@/assets/app-giftcard.png";
 import appPasswordDetail from "@/assets/app-password-detail.png";
 import pushPassportReminder from "@/assets/push-passport-reminder.png";
-import appCardDetail from "@/assets/app-card-detail.png";
 import appLocked from "@/assets/app-locked.png";
 import frameIos from "@/assets/frame-ios.png";
 import frameAndroid from "@/assets/frame-android.png";
