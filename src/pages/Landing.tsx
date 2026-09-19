@@ -545,8 +545,11 @@ export default function Landing() {
               </div>
               <div className="px-8 py-12 sm:px-14 md:py-24 md:px-14">
                 <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
-                  Track renewal dates, total spend, and which card gets charged.
+                  Subscriptions
                 </h3>
+                <p className="mt-4 text-lg text-muted-foreground">
+                  Track renewal dates, total spend, and which card gets charged.
+                </p>
               </div>
             </div>
           </div>
