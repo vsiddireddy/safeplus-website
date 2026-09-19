@@ -535,15 +535,15 @@ export default function Landing() {
 
           <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[2fr_3fr]">
-              <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
+              <div className="relative h-[340px] sm:h-[400px] md:h-[440px]">
                 <img
                   src={isDark ? subLight : subDark}
                   alt="SafePlus subscriptions screen"
-                  className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-10 md:translate-x-0 md:w-[320px]"
+                  className="absolute left-1/2 top-4 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-10 md:translate-x-0 md:w-[320px]"
                   loading="lazy"
                 />
               </div>
-              <div className="px-8 py-12 sm:px-14 md:py-24 md:px-14">
+              <div className="px-8 py-10 sm:px-14 md:py-16 md:px-14">
                 <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   Subscriptions
                 </h3>
