@@ -430,7 +430,7 @@ export default function Landing() {
                   className="flex h-full flex-col items-center gap-6 rounded-2xl px-4 py-5 text-center shadow-sm transition-transform hover:scale-[1.02]"
                   style={{ backgroundColor: color }}
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-card/20">
                     <Icon className="h-5 w-5 text-white" strokeWidth={2} />
                   </div>
                   <span className="font-display text-sm font-semibold leading-snug text-white">{name}</span>
@@ -506,7 +506,7 @@ export default function Landing() {
                   className="flex h-full flex-col items-center gap-3 rounded-2xl px-4 py-5 text-center shadow-sm transition-transform hover:scale-[1.02]"
                   style={{ backgroundColor: color }}
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-card/20">
                     <Icon className="h-5 w-5 text-white" strokeWidth={2} />
                   </div>
                   <span className="font-display text-sm font-semibold leading-snug text-white">{name}</span>
@@ -551,7 +551,7 @@ export default function Landing() {
           </div>
 
           {/* Hide sensitive details block */}
-          <div className="mx-auto mt-4 max-w-[620px] overflow-hidden rounded-2xl bg-white shadow-sm">
+          <div className="mx-auto mt-4 max-w-[620px] overflow-hidden rounded-2xl bg-card shadow-sm">
             <div className="grid items-center gap-4 sm:grid-cols-2">
               <div className="relative h-[330px] sm:h-[400px] overflow-hidden flex justify-end pr-2 sm:pr-0">
                 <img
