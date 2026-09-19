@@ -37,7 +37,6 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 import appStoreBadge from "@/assets/app-store-badge.svg";
 import googlePlayBadge from "@/assets/google-play-badge.svg";
-import appHome from "@/assets/app-home.png";
 import appPasswords from "@/assets/app-passwords.png";
 import appPasswordGoogle from "@/assets/app-password-google.png";
 import appCard from "@/assets/app-card.png";
@@ -51,6 +50,8 @@ import frameIos from "@/assets/frame-ios.png";
 import frameAndroid from "@/assets/frame-android.png";
 import heroLeftDark from "@/assets/hero-left-dark.webp";
 import heroLeftLight from "@/assets/hero-left-light.webp";
+import heroMidDark from "@/assets/hero-mid-dark.webp";
+import heroMidLight from "@/assets/hero-mid-light.webp";
 import heroRightDark from "@/assets/hero-right-dark.webp";
 import heroRightLight from "@/assets/hero-right-light.webp";
 
@@ -137,7 +138,7 @@ export default function Landing() {
   }, [isDark]);
 
   useEffect(() => {
-    [heroLeftDark, heroLeftLight, heroRightDark, heroRightLight].forEach((src) => {
+    [heroLeftDark, heroLeftLight, heroMidDark, heroMidLight, heroRightDark, heroRightLight].forEach((src) => {
       const img = new Image();
       img.src = src;
     });
@@ -305,7 +306,7 @@ export default function Landing() {
               loading="lazy"
             />
             <img
-              src={appHome}
+              src={isDark ? heroMidLight : heroMidDark}
               alt="SafePlus home dashboard"
               className="relative z-20 w-[50%] max-w-[440px] drop-shadow-2xl"
               loading="eager"
