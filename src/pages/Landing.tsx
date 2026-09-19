@@ -54,6 +54,8 @@ import passportDark from "@/assets/passport-dark.webp";
 import passportLight from "@/assets/passport-light.webp";
 import heroRightDark from "@/assets/hero-right-dark.webp";
 import heroRightLight from "@/assets/hero-right-light.webp";
+import passwordHomeDark from "@/assets/password-home-dark.webp";
+import passwordHomeLight from "@/assets/password-home-light.webp";
 
 const features = [
   {
@@ -138,7 +140,7 @@ export default function Landing() {
   }, [isDark]);
 
   useEffect(() => {
-    [heroLeftDark, heroLeftLight, heroMidDark, heroMidLight, heroRightDark, heroRightLight, appIdDark, appIdLight, passportDark, passportLight].forEach((src) => {
+    [heroLeftDark, heroLeftLight, heroMidDark, heroMidLight, heroRightDark, heroRightLight, appIdDark, appIdLight, passportDark, passportLight, passwordHomeDark, passwordHomeLight].forEach((src) => {
       const img = new Image();
       img.src = src;
     });
@@ -483,7 +485,7 @@ export default function Landing() {
             <div className="grid items-center gap-4 md:grid-cols-[2fr_3fr]">
               <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
                 <img
-                  src={appPasswords}
+                  src={isDark ? passwordHomeLight : passwordHomeDark}
                   alt="SafePlus passwords screen"
                   className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-10 md:translate-x-0 md:w-[320px]"
                   loading="lazy"
