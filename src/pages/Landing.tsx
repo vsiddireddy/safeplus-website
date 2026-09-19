@@ -49,6 +49,8 @@ import appCardDetail from "@/assets/app-card-detail.png";
 import appLocked from "@/assets/app-locked.png";
 import frameIos from "@/assets/frame-ios.png";
 import frameAndroid from "@/assets/frame-android.png";
+import heroLeftDark from "@/assets/hero-left-dark.webp";
+import heroLeftLight from "@/assets/hero-left-light.webp";
 
 const features = [
   {
@@ -288,7 +290,7 @@ export default function Landing() {
           {/* Hero phone showcase */}
           <div className="relative mx-auto mt-20 flex max-w-5xl items-end justify-center animate-fade-in">
             <img
-              src={appCard}
+              src={isDark ? heroLeftLight : heroLeftDark}
               alt="SafePlus card detail"
               className="relative z-10 w-[44%] max-w-[380px] -mr-[10%] mb-10 -rotate-[10deg] drop-shadow-2xl"
               loading="lazy"
