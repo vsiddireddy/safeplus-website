@@ -37,7 +37,6 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 import appStoreBadge from "@/assets/app-store-badge.svg";
 import googlePlayBadge from "@/assets/google-play-badge.svg";
-import appPasswords from "@/assets/app-passwords.png";
 import appCard from "@/assets/app-card.png";
 import appGiftcard from "@/assets/app-giftcard.png";
 import pushPassportReminder from "@/assets/push-passport-reminder.png";
