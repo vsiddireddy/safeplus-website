@@ -403,8 +403,8 @@ export default function Landing() {
                 </h3>
                 <div className="relative mt-8 w-full max-w-[360px] self-center aspect-[2/3]">
                   <img
-                    src={appPasswordDetail}
-                    alt="SafePlus password detail screen"
+                    src={isDark ? passportLight : passportDark}
+                    alt="SafePlus passport detail screen"
                     className="block w-full h-auto"
                     loading="lazy"
                   />
