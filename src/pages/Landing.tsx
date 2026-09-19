@@ -37,7 +37,6 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 import appStoreBadge from "@/assets/app-store-badge.svg";
 import googlePlayBadge from "@/assets/google-play-badge.svg";
-import appHome from "@/assets/app-home.png";
 import appPasswords from "@/assets/app-passwords.png";
 import appPasswordGoogle from "@/assets/app-password-google.png";
 import appCard from "@/assets/app-card.png";
@@ -51,6 +50,8 @@ import heroLeftDark from "@/assets/hero-left-dark.webp";
 import heroLeftLight from "@/assets/hero-left-light.webp";
 import heroMidDark from "@/assets/hero-mid-dark.webp";
 import heroMidLight from "@/assets/hero-mid-light.webp";
+import appIdDark from "@/assets/app-id-dark.webp";
+import appIdLight from "@/assets/app-id-light.webp";
 import heroRightDark from "@/assets/hero-right-dark.webp";
 import heroRightLight from "@/assets/hero-right-light.webp";
 
@@ -137,7 +138,7 @@ export default function Landing() {
   }, [isDark]);
 
   useEffect(() => {
-    [heroLeftDark, heroLeftLight, heroMidDark, heroMidLight, heroRightDark, heroRightLight].forEach((src) => {
+    [heroLeftDark, heroLeftLight, heroMidDark, heroMidLight, heroRightDark, heroRightLight, appIdDark, appIdLight].forEach((src) => {
       const img = new Image();
       img.src = src;
     });
@@ -305,7 +306,7 @@ export default function Landing() {
               loading="lazy"
             />
             <img
-              src={appHome}
+              src={isDark ? heroMidLight : heroMidDark}
               alt="SafePlus home dashboard"
               className="relative z-20 w-[50%] max-w-[440px] drop-shadow-2xl"
               loading="eager"
@@ -364,7 +365,7 @@ export default function Landing() {
               </div>
               <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
                 <img
-                  src={isDark ? heroMidLight : heroMidDark}
+                  src={isDark ? appIdLight : appIdDark}
                   alt="SafePlus ID detail screen"
                   className="absolute left-1/2 top-6 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-10 md:translate-x-0 md:w-[320px]"
                   loading="lazy"
