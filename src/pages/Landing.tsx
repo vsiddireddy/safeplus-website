@@ -139,7 +139,7 @@ export default function Landing() {
   }, [isDark]);
 
   useEffect(() => {
-    [heroLeftDark, heroLeftLight, heroRightDark, heroRightLight].forEach((src) => {
+    [heroLeftDark, heroLeftLight, heroMidDark, heroMidLight, heroRightDark, heroRightLight].forEach((src) => {
       const img = new Image();
       img.src = src;
     });
