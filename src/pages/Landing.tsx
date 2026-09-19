@@ -41,7 +41,6 @@ import appHome from "@/assets/app-home.png";
 import appPasswords from "@/assets/app-passwords.png";
 import appPasswordGoogle from "@/assets/app-password-google.png";
 import appCard from "@/assets/app-card.png";
-import appIdDetail from "@/assets/app-id-detail.png";
 import appGiftcard from "@/assets/app-giftcard.png";
 import appPasswordDetail from "@/assets/app-password-detail.png";
 import pushPassportReminder from "@/assets/push-passport-reminder.png";
