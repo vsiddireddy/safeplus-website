@@ -338,7 +338,7 @@ export default function Landing() {
       */}
 
       {/* Features */}
-      <section id="features" className="bg-white py-24">
+      <section id="features" className="bg-card py-24">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-center font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
             Scan once, view & copy anytime
@@ -442,7 +442,7 @@ export default function Landing() {
       </section>
 
       {/* Passwords */}
-      <section className="bg-white pt-12 pb-24">
+      <section className="bg-card pt-12 pb-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
@@ -585,7 +585,7 @@ export default function Landing() {
       </section>
 
       {/* Frequently Asked Questions */}
-      <section id="faq" className="bg-white py-24">
+      <section id="faq" className="bg-card py-24">
         <div className="mx-auto max-w-3xl px-6">
           <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-card">
             <HelpCircle className="h-7 w-7 text-muted-foreground" strokeWidth={1.5} />
@@ -643,7 +643,7 @@ export default function Landing() {
       </section>
 
       {/* Download app */}
-      <section id="get-the-app" className="bg-white pb-24 scroll-mt-20">
+      <section id="get-the-app" className="bg-card pb-24 scroll-mt-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto w-[75%] rounded-3xl bg-muted/60 p-8 sm:p-12">
             <div className="flex flex-col items-start justify-between gap-10 sm:flex-row sm:items-center">
