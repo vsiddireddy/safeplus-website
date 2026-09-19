@@ -163,6 +163,15 @@ export default function Landing() {
           </div>
           <div className="flex items-center gap-3">
             <Button
+              variant="ghost"
+              size="icon"
+              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+              className="rounded-full text-foreground hover:bg-secondary"
+              onClick={() => setIsDark((v) => !v)}
+            >
+              {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            </Button>
+            <Button
               size="sm"
               className="rounded-full bg-foreground px-4 text-background hover:bg-foreground/90"
               onClick={() => {
