@@ -41,7 +41,6 @@ import appPasswords from "@/assets/app-passwords.png";
 import appPasswordGoogle from "@/assets/app-password-google.png";
 import appCard from "@/assets/app-card.png";
 import appGiftcard from "@/assets/app-giftcard.png";
-import appPasswordDetail from "@/assets/app-password-detail.png";
 import pushPassportReminder from "@/assets/push-passport-reminder.png";
 import appLocked from "@/assets/app-locked.png";
 import frameIos from "@/assets/frame-ios.png";
@@ -52,6 +51,8 @@ import heroMidDark from "@/assets/hero-mid-dark.webp";
 import heroMidLight from "@/assets/hero-mid-light.webp";
 import appIdDark from "@/assets/app-id-dark.webp";
 import appIdLight from "@/assets/app-id-light.webp";
+import passportDark from "@/assets/passport-dark.webp";
+import passportLight from "@/assets/passport-light.webp";
 import heroRightDark from "@/assets/hero-right-dark.webp";
 import heroRightLight from "@/assets/hero-right-light.webp";
 
@@ -138,7 +139,7 @@ export default function Landing() {
   }, [isDark]);
 
   useEffect(() => {
-    [heroLeftDark, heroLeftLight, heroMidDark, heroMidLight, heroRightDark, heroRightLight, appIdDark, appIdLight].forEach((src) => {
+    [heroLeftDark, heroLeftLight, heroMidDark, heroMidLight, heroRightDark, heroRightLight, appIdDark, appIdLight, passportDark, passportLight].forEach((src) => {
       const img = new Image();
       img.src = src;
     });
@@ -401,8 +402,8 @@ export default function Landing() {
                 </h3>
                 <div className="relative mt-8 w-full max-w-[360px] self-center aspect-[2/3]">
                   <img
-                    src={appPasswordDetail}
-                    alt="SafePlus password detail screen"
+                    src={isDark ? passportLight : passportDark}
+                    alt="SafePlus passport detail screen"
                     className="block w-full h-auto"
                     loading="lazy"
                   />
