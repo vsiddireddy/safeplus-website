@@ -307,7 +307,7 @@ export default function Landing() {
               loading="lazy"
             />
             <img
-              src={appHome}
+              src={isDark ? heroMidLight : heroMidDark}
               alt="SafePlus home dashboard"
               className="relative z-20 w-[50%] max-w-[440px] drop-shadow-2xl"
               loading="eager"
