@@ -135,6 +135,13 @@ export default function Landing() {
   }, [isDark]);
 
   useEffect(() => {
+    [heroLeftDark, heroLeftLight].forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
+  useEffect(() => {
     if (!loading && user) navigate("/dashboard", { replace: true });
   }, [user, loading, navigate]);
 
