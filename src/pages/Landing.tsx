@@ -124,9 +124,7 @@ export default function Landing() {
 
   const [isDark, setIsDark] = useState<boolean>(() => {
     if (typeof window === "undefined") return false;
-    const stored = window.localStorage.getItem("theme");
-    if (stored) return stored === "dark";
-    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return window.localStorage.getItem("theme") === "dark";
   });
 
   useEffect(() => {
