@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { HelpCircle } from "lucide-react";
+import { HelpCircle, Moon, Sun } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import {
@@ -122,6 +122,18 @@ export default function Landing() {
   const { user, loading } = useAuth();
   const navigate = useNavigate();
 
+  const [isDark, setIsDark] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    const stored = window.localStorage.getItem("theme");
+    if (stored) return stored === "dark";
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", isDark);
+    window.localStorage.setItem("theme", isDark ? "dark" : "light");
+  }, [isDark]);
+
   useEffect(() => {
     if (!loading && user) navigate("/dashboard", { replace: true });
   }, [user, loading, navigate]);
@@ -150,6 +162,15 @@ export default function Landing() {
             </a> */}
           </div>
           <div className="flex items-center gap-3">
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+              className="rounded-full text-foreground hover:bg-secondary"
+              onClick={() => setIsDark((v) => !v)}
+            >
+              {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            </Button>
             <Button
               size="sm"
               className="rounded-full bg-foreground px-4 text-background hover:bg-foreground/90"
@@ -317,7 +338,7 @@ export default function Landing() {
       */}
 
       {/* Features */}
-      <section id="features" className="bg-white py-24">
+      <section id="features" className="bg-card py-24">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-center font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
             Scan once, view & copy anytime
@@ -325,7 +346,7 @@ export default function Landing() {
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-muted-foreground">
             Cards and documents are automatically organized into labeled fields. Key details are always ready to view and copy with a tap.
           </p>
-          <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
+          <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
               <div className="px-8 py-12 sm:px-14 md:py-24 md:px-10">
                 <h3 className="max-w-[560px] font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
@@ -346,7 +367,7 @@ export default function Landing() {
           {/* Second row - two half-width cards */}
           <div className="mx-auto mt-6 grid w-[90%] gap-6 sm:w-[80.4%] md:grid-cols-2">
             {/* Left card - Card details */}
-            <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3]">
+            <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary">
               <div className="flex flex-col items-start px-8 pt-12 sm:px-10 sm:pt-14">
                 <h3 className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   View and copy details like card number and CVV.
@@ -363,7 +384,7 @@ export default function Landing() {
             </div>
 
             {/* Right card - Gift card alerts */}
-            <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3]">
+            <div className="relative overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary">
               <div className="flex flex-col items-start px-8 pt-12 sm:px-10 sm:pt-14">
                 <h3 className="font-display text-center text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   Get alerted before a card or document expires.
@@ -387,7 +408,7 @@ export default function Landing() {
           </div>
 
           {/* Third row - all other items */}
-          <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] px-8 py-12 sm:px-14 sm:py-14">
+          <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary px-8 py-12 sm:px-14 sm:py-14">
             <h3 className="text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
               No card or document left behind.
             </h3>
@@ -421,14 +442,14 @@ export default function Landing() {
       </section>
 
       {/* Passwords */}
-      <section className="bg-white pt-12 pb-24">
+      <section className="bg-card pt-12 pb-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
               Your local password manager
             </h2>
           </div>
-          <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
+          <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
               <div className="px-8 py-12 sm:px-14 md:py-24 md:px-14">
                 <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
@@ -448,7 +469,7 @@ export default function Landing() {
           </div>
 
           {/* Reversed layout */}
-          <div className="relative mx-auto mt-6 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] sm:w-[80.4%]">
+          <div className="relative mx-auto mt-6 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[2fr_3fr]">
               <div className="relative h-[420px] sm:h-[480px] md:h-[560px]">
                 <img
@@ -467,7 +488,7 @@ export default function Landing() {
           </div>
 
           {/* And it's not just passwords */}
-          <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] px-8 py-12 sm:px-14 sm:py-14">
+          <div className="mx-auto mt-6 w-[90%] sm:w-[80.4%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary px-8 py-12 sm:px-14 sm:py-14">
             <h3 className="text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
               Store more than just passwords.
             </h3>
@@ -530,7 +551,7 @@ export default function Landing() {
           </div>
 
           {/* Hide sensitive details block */}
-          <div className="mx-auto mt-4 max-w-[620px] overflow-hidden rounded-2xl bg-white shadow-sm">
+          <div className="mx-auto mt-4 max-w-[620px] overflow-hidden rounded-2xl bg-card shadow-sm">
             <div className="grid items-center gap-4 sm:grid-cols-2">
               <div className="relative h-[330px] sm:h-[400px] overflow-hidden flex justify-end pr-2 sm:pr-0">
                 <img
@@ -564,7 +585,7 @@ export default function Landing() {
       </section>
 
       {/* Frequently Asked Questions */}
-      <section id="faq" className="bg-white py-24">
+      <section id="faq" className="bg-card py-24">
         <div className="mx-auto max-w-3xl px-6">
           <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-card">
             <HelpCircle className="h-7 w-7 text-muted-foreground" strokeWidth={1.5} />
@@ -622,7 +643,7 @@ export default function Landing() {
       </section>
 
       {/* Download app */}
-      <section id="get-the-app" className="bg-white pb-24 scroll-mt-20">
+      <section id="get-the-app" className="bg-card pb-24 scroll-mt-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto w-[75%] rounded-3xl bg-muted/60 p-8 sm:p-12">
             <div className="flex flex-col items-start justify-between gap-10 sm:flex-row sm:items-center">
