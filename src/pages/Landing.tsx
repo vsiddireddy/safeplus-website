@@ -57,6 +57,8 @@ import passwordHomeDark from "@/assets/password-home-dark.webp";
 import passwordHomeLight from "@/assets/password-home-light.webp";
 import subDark from "@/assets/sub-dark.webp";
 import subLight from "@/assets/sub-light.webp";
+import taskDark from "@/assets/task-dark.webp";
+import taskLight from "@/assets/task-light.webp";
 
 const features = [
   {
@@ -141,7 +143,7 @@ export default function Landing() {
   }, [isDark]);
 
   useEffect(() => {
-    [heroLeftDark, heroLeftLight, heroMidDark, heroMidLight, heroRightDark, heroRightLight, appIdDark, appIdLight, passportDark, passportLight, passwordHomeDark, passwordHomeLight, subDark, subLight].forEach((src) => {
+    [heroLeftDark, heroLeftLight, heroMidDark, heroMidLight, heroRightDark, heroRightLight, appIdDark, appIdLight, passportDark, passportLight, passwordHomeDark, passwordHomeLight, subDark, subLight, taskDark, taskLight].forEach((src) => {
       const img = new Image();
       img.src = src;
     });
@@ -552,6 +554,30 @@ export default function Landing() {
                   hit, with your monthly and annual spend totaled up
                   automatically.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          {/* More in the vault — Tasks */}
+          <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary sm:w-[80.4%]">
+            <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
+              <div className="order-2 px-8 py-10 sm:px-14 md:order-1 md:py-16">
+                <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
+                  Tasks
+                </h3>
+                <p className="mt-4 text-lg text-muted-foreground">
+                  Create a task and get a push notification when it's due. Set
+                  your own reminder schedule for anything you don't want to
+                  forget.
+                </p>
+              </div>
+              <div className="relative order-1 h-[340px] sm:h-[400px] md:order-2 md:h-[440px]">
+                <img
+                  src={isDark ? taskLight : taskDark}
+                  alt="SafePlus tasks screen"
+                  className="absolute left-1/2 top-4 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-10 md:translate-x-0 md:w-[320px]"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
