@@ -163,13 +163,13 @@ export default function Landing() {
             <span className="font-display text-lg font-bold text-foreground">SafePlus</span>
           </Link>
           <div className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-6 text-sm font-medium text-foreground">
-            <a href="#features" className="hover:text-primary transition-colors">
+            <a href="#features" className="hover:text-[#f48e39] transition-colors">
               Features
             </a>
-            <a href="#security" className="hover:text-primary transition-colors">
+            <a href="#security" className="hover:text-[#f48e39] transition-colors">
               Security
             </a>
-            <a href="#faq" className="hover:text-primary transition-colors">
+            <a href="#faq" className="hover:text-[#f48e39] transition-colors">
               FAQ
             </a>
             {/* <a href="#blog" className="hover:text-primary transition-colors">
