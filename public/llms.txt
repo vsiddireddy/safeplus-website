@@ -1,0 +1,45 @@
+# SafePlus
+
+> SafePlus is a free, local-only vault app for iOS and Android that stores cards, IDs, documents, passwords, subscriptions, and tasks entirely on-device with AES-256 encryption. No cloud sync, no account, no subscription.
+
+## Product
+
+- Platforms: iOS and Android
+
+- Price: Free (no subscriptions, paywalls, or ads)
+
+- Data storage: 100% on-device, AES-256 encrypted. Nothing is uploaded to a server or the cloud. No account or email required.
+
+- App access: Face ID, fingerprint, or PIN. Automatically locks after an adjustable period of inactivity.
+
+## What SafePlus stores
+
+- Cards and documents: driver's licenses, passports, IDs, credit and debit cards, loyalty and membership cards, receipts, boarding passes, birth and marriage certificates, vehicle registration, health documents, lease and rental documents, mortgage documents, gift cards
+
+- Passwords: logins with username, password, website, and notes; Wi-Fi passwords; recovery codes; safe combinations; gate and door codes; TSA PreCheck / Known Traveler Number; apartment and building codes
+
+- Subscriptions: tracks renewal dates, cost, and which card is charged; totals monthly and annual spend automatically
+
+- Tasks: push notification reminders on a user-defined schedule
+
+## How SafePlus differs from other wallet or password apps
+
+Most wallet and password apps sync data to the cloud and focus mainly on payment cards. SafePlus stores everything — cards, IDs, documents, and passwords — with on-device encryption only, no account, and no cloud copy, while automatically extracting key fields from scanned cards and documents. It is free with no subscriptions, paywalls, or ads.
+
+## Links
+
+- [Download on the App Store](https://apps.apple.com/us/app/safeplus-local-vault/id1561590563)
+
+- [Get it on Google Play](https://play.google.com/store/apps/details?id=com.mobile.safeplus)
+
+- [Homepage](https://safeplus.app/)
+
+## FAQ
+
+- Is SafePlus free? Yes, completely free with no subscriptions, paywalls, or ads.
+
+- What devices does SafePlus support? iPhone, iPad, Android phones, and Android tablets.
+
+- How is data protected? AES-256 on-device encryption; nothing uploaded to a server or the cloud; no account or email required.
+
+- Does SafePlus send expiration reminders? Yes — it automatically reads expiration dates from scanned cards and documents and sends configurable push reminders.
