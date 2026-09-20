@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { HelpCircle, Moon, Sun } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
@@ -153,17 +153,6 @@ export default function Landing() {
     if (!loading && user) navigate("/dashboard", { replace: true });
   }, [user, loading, navigate]);
 
-  // Beehiiv newsletter embed — inject the loader script so the form renders inline.
-  const beehiivRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const container = beehiivRef.current;
-    if (!container || container.querySelector("iframe")) return;
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = "https://subscribe-forms.beehiiv.com/v3/loader.js";
-    script.setAttribute("data-beehiiv-form", "225f8a50-5a68-414c-a15e-8b5afe01b0d3");
-    container.appendChild(script);
-  }, []);
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -792,13 +781,6 @@ export default function Landing() {
         </div>
       </section>
       */}
-
-      {/* Newsletter */}
-      <section className="bg-card py-24">
-        <div className="mx-auto max-w-3xl px-6 text-center">
-          <div ref={beehiivRef} className="beehiiv-embed" />
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="border-t border-border py-8">
