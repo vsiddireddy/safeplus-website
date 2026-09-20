@@ -33,6 +33,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Install Chrome for prerendering
+        run: npx puppeteer browsers install chrome
+
+      - name: Prerender routes
+        run: npm run prerender
+
       - name: SPA 404 fallback
         run: cp dist/index.html dist/404.html
 
