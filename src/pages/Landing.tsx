@@ -548,7 +548,9 @@ export default function Landing() {
                   Subscriptions
                 </h3>
                 <p className="mt-4 text-lg text-muted-foreground">
-                  Track renewal dates, total spend, and which card gets charged.
+                  Know what's renewing, what it costs, and which card takes the
+                  hit, with your monthly and annual spend totaled up
+                  automatically.
                 </p>
               </div>
             </div>
