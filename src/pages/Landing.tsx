@@ -618,7 +618,7 @@ export default function Landing() {
           </div>
 
           {/* Hide sensitive details block */}
-          <div className="mx-auto mt-4 max-w-[620px] overflow-hidden rounded-2xl bg-card shadow-sm">
+          <div className="mx-auto mt-4 max-w-[620px] overflow-hidden rounded-2xl bg-card dark:bg-secondary shadow-sm">
             <div className="grid items-center gap-4 sm:grid-cols-2">
               <div className="relative h-[330px] sm:h-[400px] overflow-hidden flex justify-end pr-2 sm:pr-0">
                 <img
