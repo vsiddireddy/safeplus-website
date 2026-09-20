@@ -1,59 +1,49 @@
+# Prerender safeplus.app for AI crawlers
 
+Goal: ship real HTML text in the file crawlers download, instead of an empty `<div id="root">` shell.
 
-## Security Hardening Plan
+## Tool choice
 
-The security scan found 8 findings (2 errors, 4 warnings, 2 info). The existing RLS foundation is solid — all tables have RLS enabled, roles are in a separate table, and `has_role()`/`get_user_org_id()` security definer functions exist. Here's what needs hardening:
+A **headless-Chrome prerender step inside the existing GitHub Action**, using Puppeteer driven by a small script in the repo — not `react-snap` (unmaintained, Puppeteer-1 era, known crashes on React 18) and not `vite-react-ssg` (would require restructuring routing and every browser-only bit of the page: `localStorage` theme read, `window.scrollTo`, the beehiiv script).
 
-### 1. Enable Leaked Password Protection
-Configure auth to reject passwords found in known breach databases.
+Flow: `vite build` → serve `dist/` locally → Chrome visits each route → wait for React to finish → write the fully-rendered DOM back into that route's `index.html`.
 
-### 2. Add Password Protection for Shared Proposals (Error)
-Shared proposals currently expose pricing and content to anyone with the link. Add optional password protection:
-- **Migration**: Add `share_password_hash` column to `proposals` table
-- **Edge function**: `verify-share-password` — accepts share_id + password, returns a signed short-lived token
-- **Update RLS**: Keep existing public SELECT for non-password-protected proposals; password-protected ones require verification through the edge function
-- **Frontend**: Update `PublicProposal.tsx` to show a password gate when `share_password_hash` is set; update `ProposalDetail.tsx` to let users set a share password
+## Which routes get prerendered
 
-### 3. Add Share Link Expiration (Error)
-- **Migration**: Add `share_expires_at` column to `proposals`
-- **Update RLS**: Modify "Anyone can view shared proposals" policy to check `share_expires_at IS NULL OR share_expires_at > now()`
-- **Frontend**: Add expiration date picker in proposal sharing UI
+The site has one public marketing page plus an app behind login. Only public, indexable content is worth prerendering:
 
-### 4. Restrict Client Contact Info by Role (Warning)
-- Create a view `clients_public` that excludes `email` and `phone` for non-admin/manager users
-- Or add role-based filtering in the application layer since all org members currently see all client fields
+- `/` — the SafePlus landing page (all the real content)
+- `404.html` — stays as the SPA fallback copy of `/`
 
-### 5. Anonymize IP in Proposal Events (Warning)
-- Truncate IP addresses before storing (remove last octet) in `PublicProposal.tsx`
-- Add a privacy notice to the public proposal page
+The other routes (`/login`, `/signup`, `/dashboard`, `/clients`, `/proposals`, `/settings`, `/p/:shareId`, …) are auth-gated or dynamic; they render nothing meaningful without a session and shouldn't be indexed. They keep working through the existing SPA fallback. If a privacy policy, pricing, or blog page is added later, it gets added to the route list in the prerender script and picks up its own static file automatically.
 
-### 6. Align Proposal Version Access with Proposal Access (Info)
-- **Migration**: Update `proposal_versions` RLS to allow managers/admins to view versions of proposals they can access:
-```sql
-CREATE POLICY "Managers/admins can view org proposal versions"
-ON proposal_versions FOR SELECT
-USING (EXISTS (
-  SELECT 1 FROM proposals
-  WHERE proposals.id = proposal_versions.proposal_id
-  AND proposals.org_id = get_user_org_id(auth.uid())
-  AND (has_role(auth.uid(), 'admin') OR has_role(auth.uid(), 'manager'))
-));
-```
+Note: there is currently no privacy-policy or blog page in the codebase. If you want those pages to exist and be crawlable, that's separate content work — say the word.
 
-### 7. Add Role Change Audit Logging (Info)
-- **Migration**: Create `audit_logs` table with RLS (admin SELECT only, insert via trigger)
-- **Migration**: Add trigger on `user_roles` for INSERT/UPDATE/DELETE that logs changes to `audit_logs`
+## FAQ accordion content must be in the shipped HTML
 
-### 8. Input Validation & Frontend Security
-- Sanitize all user inputs before database writes (proposal content, client notes)
-- Add rate limiting awareness on auth pages (already handled by backend, but add UI feedback)
-- Ensure no sensitive data in localStorage beyond the session token
+Today the FAQ uses a collapsed Radix accordion: only the first answer exists in the DOM, the other five don't render until clicked, so crawlers would see five questions with no answers. Fix: mount all accordion panels always and let CSS handle the visual collapse, so every answer is present in the prerendered HTML while the click-to-expand behaviour stays the same on screen.
 
-### Files to Change
-- **Migrations**: 3-4 migrations for schema changes (share_password_hash, share_expires_at, audit_logs table + trigger, updated RLS policies)
-- **New edge function**: `verify-share-password`
-- **`src/pages/PublicProposal.tsx`**: Password gate, IP anonymization, privacy notice
-- **`src/pages/ProposalDetail.tsx`**: Share password + expiration UI
-- **`src/pages/ProposalBuilder.tsx`**: Share expiration option
-- **Auth config**: Enable leaked password protection
+## Hydration
 
+Existing markup renders identically on server and client except the theme class, which is already resolved by the inline no-flash script before React mounts. After deploy, check the browser console on safeplus.app for hydration warnings and confirm no content flash.
+
+## Technical details
+
+- Add dev dependencies: `puppeteer`, plus a tiny static server (`sirv-cli`) for the crawl step.
+- New file `scripts/prerender.mjs`:
+  - route list (`["/"]`) as an exported constant, easy to extend
+  - serves `dist/` on a local port, launches Chrome with `--no-sandbox`
+  - navigates with `waitUntil: "networkidle0"`, waits for `#root` to have children
+  - strips nothing; serializes `document.documentElement.outerHTML` and writes `dist/<route>/index.html`
+  - per-route `<title>` / `<meta name="description">` / canonical come from the rendered document, so future routes can set their own head tags
+  - exits non-zero if a route renders an empty root, so a broken build fails the deploy loudly
+- `package.json`: add `"prerender": "node scripts/prerender.mjs"`.
+- `.github/workflows/deploy.yml`: after `npm run build`, run `npx puppeteer browsers install chrome`, then `npm run prerender`, then the existing `cp dist/index.html dist/404.html` (now copying the prerendered file).
+- `src/pages/Landing.tsx`: render all `AccordionContent` panels (`forceMount` + CSS hidden state) so answers ship in the HTML.
+- Add `Sitemap: https://safeplus.app/sitemap.xml` and a one-URL `public/sitemap.xml` for `/`.
+
+## Verification before handoff
+
+- Run the build + prerender locally and grep the output `dist/index.html` for hero copy, feature headings, and all six FAQ answers.
+- Confirm file size jumps from ~2.5 KB to a content-bearing page.
+- After you push and the Action finishes, `curl safeplus.app` shows the same text.
