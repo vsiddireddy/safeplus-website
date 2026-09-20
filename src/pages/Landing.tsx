@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { HelpCircle, Moon, Sun } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
@@ -780,6 +780,19 @@ export default function Landing() {
         </div>
       </section>
       */}
+
+      {/* Newsletter */}
+      <section className="bg-card py-24">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
+            Stay in the loop
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            Get product updates and tips from the SafePlus team, straight to your inbox.
+          </p>
+          <div ref={beehiivRef} className="mt-8 beehiiv-embed" />
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="border-t border-border py-8">
