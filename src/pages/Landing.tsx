@@ -703,7 +703,9 @@ export default function Landing() {
                 <AccordionTrigger className="py-5 text-left font-display text-base font-semibold text-foreground hover:no-underline">
                   {item.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-sm text-muted-foreground leading-relaxed">{item.a}</AccordionContent>
+                <AccordionContent forceMount className="text-sm text-muted-foreground leading-relaxed">
+                  {item.a}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
