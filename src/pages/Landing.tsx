@@ -745,7 +745,7 @@ export default function Landing() {
               </div>
               <div className="flex gap-6">
                 <div className="flex flex-col items-center gap-3">
-                  <a href="https://apps.apple.com/us/app/safeplus-local-vault/id1561590563" target="_blank" rel="noopener noreferrer" aria-label="Scan to download SafePlus on the App Store" className="block">
+                  <a href="https://apps.apple.com/us/app/safeplus-local-vault/id1561590563" target="_blank" rel="noopener noreferrer" aria-label="Scan to download SafePlus on the App Store" className="hidden sm:block">
                     <img
                       src={frameIos}
                       alt="Scan to download SafePlus on the App Store"
@@ -753,12 +753,12 @@ export default function Landing() {
                       loading="lazy"
                     />
                   </a>
-                  <a href="https://apps.apple.com/us/app/safeplus-local-vault/id1561590563" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" className="-mt-12">
+                  <a href="https://apps.apple.com/us/app/safeplus-local-vault/id1561590563" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" className="sm:-mt-12">
                     <img src={appStoreBadge} alt="Download on the App Store" className="h-10" />
                   </a>
                 </div>
                 <div className="flex flex-col items-center gap-3">
-                  <a href="https://play.google.com/store/apps/details?id=com.mobile.safeplus&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" aria-label="Scan to get SafePlus on Google Play" className="block">
+                  <a href="https://play.google.com/store/apps/details?id=com.mobile.safeplus&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" aria-label="Scan to get SafePlus on Google Play" className="hidden sm:block">
                     <img
                       src={frameAndroid}
                       alt="Scan to get SafePlus on Google Play"
@@ -766,7 +766,7 @@ export default function Landing() {
                       loading="lazy"
                     />
                   </a>
-                  <a href="https://play.google.com/store/apps/details?id=com.mobile.safeplus&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play" className="-mt-12">
+                  <a href="https://play.google.com/store/apps/details?id=com.mobile.safeplus&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play" className="sm:-mt-12">
                     <img src={googlePlayBadge} alt="Get it on Google Play" className="h-10" />
                   </a>
                 </div>
