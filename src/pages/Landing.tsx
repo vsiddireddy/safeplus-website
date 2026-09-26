@@ -578,7 +578,7 @@ export default function Landing() {
           {/* More in the vault — Tasks */}
           <div className="relative mx-auto mt-12 w-[90%] overflow-hidden rounded-3xl bg-[#eef0f3] dark:bg-secondary sm:w-[80.4%]">
             <div className="grid items-center gap-4 md:grid-cols-[3fr_2fr]">
-              <div className="order-2 px-8 py-10 sm:px-14 md:order-1 md:py-16">
+              <div className="order-1 px-8 py-10 text-center sm:px-14 sm:text-left md:order-1 md:py-16">
                 <h3 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
                   Tasks
                 </h3>
@@ -588,11 +588,11 @@ export default function Landing() {
                   forget.
                 </p>
               </div>
-              <div className="relative order-1 h-[340px] sm:h-[400px] md:order-2 md:h-[440px]">
+              <div className="relative order-2 h-[400px] sm:h-[400px] md:order-2 md:h-[440px]">
                 <img
                   src={isDark ? taskLight : taskDark}
                   alt="SafePlus tasks screen"
-                  className="absolute left-1/2 top-4 w-[280px] max-w-none -translate-x-1/2 sm:w-[340px] md:left-auto md:right-10 md:translate-x-0 md:w-[320px]"
+                  className="absolute left-1/2 top-0 w-[280px] max-w-none -translate-x-1/2 sm:top-4 sm:w-[340px] md:left-auto md:right-10 md:translate-x-0 md:w-[320px]"
                   loading="lazy"
                 />
               </div>
