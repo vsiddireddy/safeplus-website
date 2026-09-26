@@ -203,17 +203,17 @@ export default function Landing() {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-accent/50 to-background" />
-        <div className="relative mx-auto max-w-6xl px-4 sm:px-6 pb-20 pt-20 sm:pt-28">
+        <div className="relative mx-auto max-w-6xl px-4 sm:px-6 pb-12 pt-12 sm:pb-20 sm:pt-28">
           <div className="mx-auto max-w-3xl text-center">
             {/* <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-sm text-muted-foreground">
               <Sparkles className="h-3.5 w-3.5 text-primary" />
               Now with AI-powered content writing
             </div> */}
-            <h1 className="font-display text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+            <h1 className="font-display text-[2rem] leading-[1.15] font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
               <span className="block" style={{ color: "#f48e39" }}>
                 Your personal local vault{" "}
               </span>
-              <span className="block whitespace-nowrap" style={{ color: "#e15821" }}>
+              <span className="block sm:whitespace-nowrap" style={{ color: "#e15821" }}>
                 for everything important
               </span>
             </h1>
@@ -276,12 +276,12 @@ export default function Landing() {
               ))}
             </div> */}
 
-            <p className="mx-auto mt-10 max-w-2xl text-lg text-muted-foreground sm:text-xl">
+            <p className="mx-auto mt-5 max-w-2xl px-2 text-base leading-relaxed text-muted-foreground sm:mt-10 sm:px-0 sm:text-xl">
               Store IDs, cards, documents, and passwords securely on your device. Private by design. Your data
               never leaves your phone.
             </p>
 
-            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <div className="mt-7 flex flex-row items-center justify-center gap-3 sm:mt-10 sm:gap-4">
               <a
                 href="https://apps.apple.com/us/app/safeplus-local-vault/id1561590563"
                 target="_blank"
@@ -289,7 +289,7 @@ export default function Landing() {
                 aria-label="Download on the App Store"
                 className="inline-block transition-transform hover:scale-105"
               >
-                <img src={appStoreBadge} alt="Download on the App Store" className="h-[53px] w-auto" />
+                <img src={appStoreBadge} alt="Download on the App Store" className="h-[44px] w-auto sm:h-[53px]" />
               </a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.mobile.safeplus&pcampaignid=web_share"
@@ -298,29 +298,29 @@ export default function Landing() {
                 aria-label="Get it on Google Play"
                 className="inline-block transition-transform hover:scale-105"
               >
-                <img src={googlePlayBadge} alt="Get it on Google Play" className="h-[53px] w-auto" />
+                <img src={googlePlayBadge} alt="Get it on Google Play" className="h-[44px] w-auto sm:h-[53px]" />
               </a>
             </div>
           </div>
 
           {/* Hero phone showcase */}
-          <div className="relative mx-auto mt-20 flex max-w-5xl items-end justify-center animate-fade-in">
+          <div className="relative mx-auto mt-10 sm:mt-20 flex max-w-5xl items-end justify-center animate-fade-in">
             <img
               src={isDark ? heroLeftLight : heroLeftDark}
               alt="SafePlus card detail"
-              className="relative z-10 w-[44%] max-w-[380px] -mr-[10%] mb-10 -rotate-[10deg] drop-shadow-2xl"
+              className="relative z-10 w-[44%] max-w-[380px] -mr-[12%] mb-4 sm:mb-10 -rotate-[8deg] sm:-rotate-[10deg] drop-shadow-2xl"
               loading="lazy"
             />
             <img
               src={isDark ? heroMidLight : heroMidDark}
               alt="SafePlus home dashboard"
-              className="relative z-20 w-[50%] max-w-[440px] drop-shadow-2xl"
+              className="relative z-20 w-[52%] max-w-[440px] drop-shadow-2xl"
               loading="eager"
             />
             <img
               src={isDark ? heroRightLight : heroRightDark}
               alt="SafePlus password detail"
-              className="relative z-10 w-[44%] max-w-[380px] -ml-[10%] mb-10 rotate-[10deg] drop-shadow-2xl"
+              className="relative z-10 w-[44%] max-w-[380px] -ml-[12%] mb-4 sm:mb-10 rotate-[8deg] sm:rotate-[10deg] drop-shadow-2xl"
               loading="lazy"
             />
             <div className="absolute -inset-4 -z-10 rounded-2xl bg-gradient-to-r from-primary/20 via-transparent to-primary/10 blur-3xl" />
@@ -770,7 +770,7 @@ export default function Landing() {
           <p className="mx-auto mt-4 max-w-xl text-lg text-muted-foreground">
             Join hundreds of teams already using SafePlus to close more deals.
           </p>
-          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          <div className="mt-7 flex flex-row items-center justify-center gap-3 sm:mt-10 sm:gap-4">
             <Button size="lg" className="h-12 px-8 text-base w-full sm:w-auto" onClick={() => navigate("/signup")}>
               Get started — it&apos;s free
               <ArrowRight className="ml-1 h-4 w-4" />
