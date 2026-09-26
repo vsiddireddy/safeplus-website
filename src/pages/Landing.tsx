@@ -637,15 +637,15 @@ export default function Landing() {
           {/* Hide sensitive details block */}
           <div className="mx-auto mt-4 max-w-[620px] overflow-hidden rounded-2xl bg-card dark:bg-secondary shadow-sm">
             <div className="grid items-center gap-4 sm:grid-cols-2">
-              <div className="relative h-[330px] sm:h-[400px] overflow-hidden flex justify-end pr-2 sm:pr-0">
+              <div className="relative order-2 h-[330px] overflow-hidden sm:order-1 sm:h-[400px]">
                 <img
                   src={appLocked}
                   alt="SafePlus app locked screen"
-                  className="absolute top-12 right-2 sm:right-0 w-[185px] sm:w-[218px] max-w-none"
+                  className="absolute left-1/2 top-4 w-[185px] max-w-none -translate-x-1/2 sm:left-auto sm:top-12 sm:right-0 sm:w-[218px] sm:translate-x-0"
                   loading="lazy"
                 />
               </div>
-              <div className="pl-2 pr-8 pb-8 sm:pl-4 sm:pr-10 sm:py-10">
+              <div className="order-1 px-8 pt-10 pb-2 text-center sm:order-2 sm:pl-4 sm:pr-10 sm:py-10 sm:text-left">
                 <h3 className="font-display text-2xl font-extrabold leading-tight tracking-tight text-foreground sm:text-3xl">
                   Automatically locks after a period of inactivity that you can adjust.
                 </h3>
