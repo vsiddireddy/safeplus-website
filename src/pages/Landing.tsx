@@ -732,7 +732,7 @@ export default function Landing() {
       <section id="get-the-app" className="bg-card pb-24 scroll-mt-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto w-[96%] rounded-3xl bg-muted/60 p-8 sm:p-12 sm:w-[75%]">
-            <div className="flex flex-col items-start justify-between gap-10 sm:flex-row sm:items-center">
+            <div className="flex flex-col items-start justify-between gap-4 sm:gap-10 sm:flex-row sm:items-center">
               <div className="max-w-md text-center sm:text-left">
                 <h2 className="font-display text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
                   Take SafePlus with you,
