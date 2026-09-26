@@ -520,18 +520,21 @@ export default function Landing() {
                 { name: "Safe Combinations", icon: Lock, color: "#e15821" },
                 { name: "Gate & Door Codes", icon: KeyRound, color: "#e15821" },
                 { name: "Apartment & Building Codes", icon: Home, color: "#e15821" },
-              ].map(({ name, icon: Icon, color }) => (
-                <div
-                  key={name}
-                  className="flex h-full flex-col items-center gap-3 rounded-2xl px-4 py-5 text-center shadow-sm transition-transform hover:scale-[1.02]"
-                  style={{ backgroundColor: color }}
-                >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20">
-                    <Icon className="h-5 w-5 text-white" strokeWidth={2} />
+              ].map(({ name, icon: Icon, color }, index) => {
+                const mobileBg = Math.floor(index / 2) % 2 === 0 ? "bg-[#f48e39]" : "bg-[#e15821]";
+                const desktopBg = color === "#f48e39" ? "sm:bg-[#f48e39]" : "sm:bg-[#e15821]";
+                return (
+                  <div
+                    key={name}
+                    className={`flex h-full flex-col items-center gap-3 rounded-2xl px-4 py-5 text-center shadow-sm transition-transform hover:scale-[1.02] ${mobileBg} ${desktopBg}`}
+                  >
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20">
+                      <Icon className="h-5 w-5 text-white" strokeWidth={2} />
+                    </div>
+                    <span className="font-display text-sm font-semibold leading-snug text-white">{name}</span>
                   </div>
-                  <span className="font-display text-sm font-semibold leading-snug text-white">{name}</span>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 
