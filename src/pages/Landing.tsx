@@ -514,13 +514,13 @@ export default function Landing() {
             </h3>
             <div className="mt-10 grid grid-cols-2 auto-rows-fr gap-4 sm:grid-cols-3">
               {[
-                { name: "TSA PreCheck / Known Traveler Number", icon: Plane, color: "#f48e39" },
+                { name: "TSA PreCheck / Known Traveler Number", shortName: "TSA PreCheck / KTN", icon: Plane, color: "#f48e39" },
                 { name: "Wi-Fi Passwords", icon: Wifi, color: "#f48e39" },
                 { name: "Recovery Codes", icon: Shield, color: "#f48e39" },
                 { name: "Safe Combinations", icon: Lock, color: "#e15821" },
                 { name: "Gate & Door Codes", icon: KeyRound, color: "#e15821" },
                 { name: "Apartment & Building Codes", icon: Home, color: "#e15821" },
-              ].map(({ name, icon: Icon, color }, index) => {
+              ].map(({ name, shortName, icon: Icon, color }, index) => {
                 const mobileBg = Math.floor(index / 2) % 2 === 0 ? "bg-[#f48e39]" : "bg-[#e15821]";
                 const desktopBg = color === "#f48e39" ? "sm:bg-[#f48e39]" : "sm:bg-[#e15821]";
                 return (
@@ -531,7 +531,16 @@ export default function Landing() {
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20">
                       <Icon className="h-5 w-5 text-white" strokeWidth={2} />
                     </div>
-                    <span className="font-display text-sm font-semibold leading-snug text-white">{name}</span>
+                    <span className="font-display text-sm font-semibold leading-snug text-white">
+                      {shortName ? (
+                        <>
+                          <span className="sm:hidden">{shortName}</span>
+                          <span className="hidden sm:inline">{name}</span>
+                        </>
+                      ) : (
+                        name
+                      )}
+                    </span>
                   </div>
                 );
               })}
