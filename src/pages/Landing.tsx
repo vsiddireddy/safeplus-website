@@ -446,7 +446,7 @@ export default function Landing() {
                 return (
                   <div
                     key={name}
-                    className={`flex h-full flex-col items-center gap-6 rounded-2xl px-4 py-5 text-center shadow-sm transition-transform hover:scale-[1.02] ${mobileBg} ${desktopBg}`}
+                    className={`flex h-full flex-col items-center gap-3 rounded-2xl px-4 py-4 text-center shadow-sm transition-transform hover:scale-[1.02] sm:gap-6 sm:py-5 ${mobileBg} ${desktopBg}`}
                   >
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20">
                       <Icon className="h-5 w-5 text-white" strokeWidth={2} />
