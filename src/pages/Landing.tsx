@@ -754,7 +754,7 @@ export default function Landing() {
                     />
                   </a>
                   <a href="https://apps.apple.com/us/app/safeplus-local-vault/id1561590563" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" className="sm:-mt-12">
-                    <img src={appStoreBadge} alt="Download on the App Store" className="h-10" />
+                    <img src={appStoreBadge} alt="Download on the App Store" className="h-14 sm:h-10" />
                   </a>
                 </div>
                 <div className="flex flex-col items-center gap-3">
@@ -767,7 +767,7 @@ export default function Landing() {
                     />
                   </a>
                   <a href="https://play.google.com/store/apps/details?id=com.mobile.safeplus&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play" className="sm:-mt-12">
-                    <img src={googlePlayBadge} alt="Get it on Google Play" className="h-10" />
+                    <img src={googlePlayBadge} alt="Get it on Google Play" className="h-14 sm:h-10" />
                   </a>
                 </div>
               </div>
