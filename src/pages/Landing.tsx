@@ -499,7 +499,7 @@ export default function Landing() {
                   loading="lazy"
                 />
               </div>
-              <div className="px-8 pt-56 pb-10 text-center sm:px-14 sm:py-12 md:py-24 md:px-14 sm:text-left">
+              <div className="px-8 pt-48 pb-10 text-center sm:px-14 sm:py-12 md:py-24 md:px-14 sm:text-left">
                 <h3 className="font-display text-2xl font-extrabold leading-tight tracking-tight text-foreground sm:text-3xl md:text-4xl">
                   Search, favorite, and pull up any password in seconds. Your passwords never leave your phone.
                 </h3>
