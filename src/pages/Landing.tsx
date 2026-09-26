@@ -209,8 +209,8 @@ export default function Landing() {
               <Sparkles className="h-3.5 w-3.5 text-primary" />
               Now with AI-powered content writing
             </div> */}
-            <h1 className="font-display text-[2rem] leading-[1.15] font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-              <span className="block" style={{ color: "#f48e39" }}>
+            <h1 className="font-display text-[min(2rem,6.4vw)] leading-[1.15] font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+              <span className="block whitespace-nowrap" style={{ color: "#f48e39" }}>
                 Your personal local vault{" "}
               </span>
               <span className="block sm:whitespace-nowrap" style={{ color: "#e15821" }}>
